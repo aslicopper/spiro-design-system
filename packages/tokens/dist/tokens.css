@@ -544,6 +544,33 @@
   --spiro-font-display: 'Clash Grotesk', 'Inter', system-ui, sans-serif;
   --spiro-font-sans: 'DM Sans', 'Inter', system-ui, sans-serif;
   --spiro-font-handwritten: 'Kalam', cursive;
+  --spiro-font-size-12: 12px;
+  --spiro-font-size-14: 14px;
+  --spiro-font-size-16: 16px;
+  --spiro-font-size-18: 18px;
+  --spiro-font-size-20: 20px;
+  --spiro-font-size-24: 24px;
+  --spiro-font-size-28: 28px;
+  --spiro-font-size-30: 30px;
+  --spiro-font-size-36: 36px;
+  --spiro-font-size-40: 40px;
+  --spiro-font-size-44: 44px;
+  --spiro-font-size-56: 56px;
+  --spiro-font-size-72: 72px;
+  --spiro-line-height-tight: 1;
+  --spiro-line-height-snug: 1.2;
+  --spiro-line-height-normal: 1.4;
+  --spiro-line-height-relaxed: 1.5;
+  --spiro-line-height-loose: 1.65;
+  --spiro-letter-spacing-tighter: -0.02em;
+  --spiro-letter-spacing-tight: -0.01em;
+  --spiro-letter-spacing-normal: 0;
+  --spiro-letter-spacing-wide: 0.02em;
+  --spiro-letter-spacing-wider: 0.04em;
+  --spiro-font-weight-regular: 400;
+  --spiro-font-weight-medium: 500;
+  --spiro-font-weight-semibold: 600;
+  --spiro-font-weight-bold: 700;
 
   /* ---------- Motion ---------- */
   --spiro-duration-fast: 120ms;

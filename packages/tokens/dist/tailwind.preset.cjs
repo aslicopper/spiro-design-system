@@ -620,6 +620,41 @@ module.exports = {
         sans: ['DM Sans', 'Inter', 'system-ui', 'sans-serif'],
         handwritten: ['Kalam', 'cursive'],
       },
+      fontSize: {
+        "12": "12px",
+        "14": "14px",
+        "16": "16px",
+        "18": "18px",
+        "20": "20px",
+        "24": "24px",
+        "28": "28px",
+        "30": "30px",
+        "36": "36px",
+        "40": "40px",
+        "44": "44px",
+        "56": "56px",
+        "72": "72px"
+},
+      lineHeight: {
+        "tight": "1",
+        "snug": "1.2",
+        "normal": "1.4",
+        "relaxed": "1.5",
+        "loose": "1.65"
+},
+      letterSpacing: {
+        "tighter": "-0.02em",
+        "tight": "-0.01em",
+        "normal": "0",
+        "wide": "0.02em",
+        "wider": "0.04em"
+},
+      fontWeight: {
+        "regular": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700"
+},
       transitionDuration: { fast: '120ms', DEFAULT: '200ms', slow: '320ms' },
       transitionTimingFunction: {
         standard: 'cubic-bezier(0.2, 0, 0, 1)',
