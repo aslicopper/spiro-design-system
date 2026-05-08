@@ -137,10 +137,27 @@ if (buckets.opacity.length) {
   lines.push('');
 }
 
+// Read typography + future extras from extras.json
+const EXTRAS_PATH = path.join(ROOT, 'src', 'extras.json');
+const extras = fs.existsSync(EXTRAS_PATH)
+  ? JSON.parse(fs.readFileSync(EXTRAS_PATH, 'utf8'))
+  : {};
+
 lines.push('  /* ---------- Typography ---------- */');
 lines.push(`  --spiro-font-display: 'Clash Grotesk', 'Inter', system-ui, sans-serif;`);
 lines.push(`  --spiro-font-sans: 'DM Sans', 'Inter', system-ui, sans-serif;`);
 lines.push(`  --spiro-font-handwritten: 'Kalam', cursive;`);
+
+const emitScale = (prefix, items) => {
+  if (!items) return;
+  for (const [k, v] of Object.entries(items)) {
+    lines.push(`  --spiro-${prefix}-${kebab(k)}: ${v};`);
+  }
+};
+emitScale('font-size', extras.fontSize);
+emitScale('line-height', extras.lineHeight);
+emitScale('letter-spacing', extras.letterSpacing);
+emitScale('font-weight', extras.fontWeight);
 lines.push('');
 lines.push('  /* ---------- Motion ---------- */');
 lines.push(`  --spiro-duration-fast: 120ms;`);
@@ -295,6 +312,10 @@ module.exports = {
         sans: ['DM Sans', 'Inter', 'system-ui', 'sans-serif'],
         handwritten: ['Kalam', 'cursive'],
       },
+      fontSize: ${JSON.stringify(extras.fontSize || {}, null, 8)},
+      lineHeight: ${JSON.stringify(extras.lineHeight || {}, null, 8)},
+      letterSpacing: ${JSON.stringify(extras.letterSpacing || {}, null, 8)},
+      fontWeight: ${JSON.stringify(extras.fontWeight || {}, null, 8)},
       transitionDuration: { fast: '120ms', DEFAULT: '200ms', slow: '320ms' },
       transitionTimingFunction: {
         standard: 'cubic-bezier(0.2, 0, 0, 1)',
