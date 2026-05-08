@@ -1,0 +1,38 @@
+name: Build tokens
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/tokens/src/tokens-studio.json'
+      - 'packages/tokens/scripts/build.cjs'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build dist files
+        working-directory: packages/tokens
+        run: node scripts/build.cjs
+
+      - name: Commit regenerated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add packages/tokens/dist
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: rebuild tokens dist [skip ci]"
+            git push
+          else
+            echo "No dist changes — nothing to commit."
+          fi
