@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'packages/tokens/src/tokens-studio.json'
+      - 'packages/tokens/src/extras.json'
       - 'packages/tokens/scripts/build.cjs'
 
 jobs:
