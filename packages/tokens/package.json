@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aslicopper/Spiro_.git",
+    "url": "https://github.com/aslicopper/spiro-design-system.git",
     "directory": "packages/tokens"
   },
   "keywords": ["design-system", "design-tokens", "spiro", "tailwind", "css-variables"],
