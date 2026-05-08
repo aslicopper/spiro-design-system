@@ -1,0 +1,6528 @@
+{
+  "version": "0.16",
+  "obsoleteVariables": [
+    "color/stone/25",
+    "color/stone/50",
+    "color/stone/100",
+    "color/stone/200",
+    "color/stone/300",
+    "color/stone/400",
+    "color/stone/500",
+    "color/stone/600",
+    "color/stone/700",
+    "color/stone/800",
+    "color/stone/900",
+    "color/stone/950",
+    "color/stone/975",
+    "bg/lavender/50",
+    "bg/lavender/100",
+    "bg/mint/50",
+    "bg/mint/100",
+    "bg/peach/50",
+    "bg/peach/100",
+    "bg/periwinkle/50",
+    "bg/periwinkle/100",
+    "bg/section/lavender",
+    "bg/section/mint",
+    "bg/section/peach",
+    "bg/section/periwinkle",
+    "decorative/orange",
+    "decorative/orangeBg",
+    "decorative-bg/lavender/soft",
+    "decorative-bg/lavender/bold",
+    "decorative-bg/mint/soft",
+    "decorative-bg/mint/bold",
+    "decorative-bg/peach/soft",
+    "decorative-bg/peach/bold",
+    "decorative-bg/periwinkle/soft",
+    "decorative-bg/periwinkle/bold",
+    "decorative-fg/orange",
+    "decorative-fg/amber",
+    "decorative-fg/yellow",
+    "decorative-fg/lime",
+    "decorative-fg/emerald",
+    "decorative-fg/cyan",
+    "decorative-fg/sky",
+    "decorative-fg/indigo",
+    "decorative-fg/violet",
+    "decorative-fg/pink",
+    "decorative-fg/rose",
+    "opacity/4",
+    "opacity/8",
+    "opacity/16",
+    "opacity/24",
+    "opacity/40",
+    "opacity/56",
+    "opacity/72",
+    "opacity/88",
+    "accent/active"
+  ],
+  "obsoleteTextStyles": [
+    "display-xl",
+    "display-lg",
+    "display-md",
+    "display-sm",
+    "display-xs",
+    "heading-xl",
+    "heading-lg",
+    "heading-md",
+    "heading-sm",
+    "body-xs",
+    "body-sm",
+    "body-md",
+    "body-lg",
+    "label-sm",
+    "label-lg",
+    "quote",
+    "accent",
+    "accent-20",
+    "amount-lg",
+    "amount-md"
+  ],
+  "collections": [
+    {
+      "name": "Spiro Color",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "variables": [
+        {
+          "name": "fg/default",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#18181B",
+            "Dark": "#FBFAF7"
+          }
+        },
+        {
+          "name": "fg/muted",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#52525B",
+            "Dark": "#A1A1AA"
+          }
+        },
+        {
+          "name": "fg/subtle",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#71717A",
+            "Dark": "#71717A"
+          }
+        },
+        {
+          "name": "fg/onAccent",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBFAF7",
+            "Dark": "#FBFAF7"
+          }
+        },
+        {
+          "name": "fg/onInverse",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBFAF7",
+            "Dark": "#18181B"
+          }
+        },
+        {
+          "name": "fg/onLight",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#18181B",
+            "Dark": "#18181B"
+          }
+        },
+        {
+          "name": "fg/muted-blend",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#18181B99",
+            "Dark": "#FBFAF799"
+          }
+        },
+        {
+          "name": "fg/subtle-blend",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#18181B66",
+            "Dark": "#FBFAF766"
+          }
+        },
+        {
+          "name": "fg/contrast",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFFFFF",
+            "Dark": "#000000"
+          }
+        },
+        {
+          "name": "fg/black",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#000000",
+            "Dark": "#000000"
+          }
+        },
+        {
+          "name": "fg/white",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFFFFF",
+            "Dark": "#FFFFFF"
+          }
+        },
+        {
+          "name": "bg/canvas",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBFAF7",
+            "Dark": "#0F0E25"
+          }
+        },
+        {
+          "name": "bg/default",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#18181B",
+            "Dark": "#FBFAF7"
+          }
+        },
+        {
+          "name": "bg/subtle",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F6F4EE",
+            "Dark": "#1A1833"
+          }
+        },
+        {
+          "name": "bg/muted",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EEEBE1",
+            "Dark": "#27272A"
+          }
+        },
+        {
+          "name": "bg/inverse",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0F0E25",
+            "Dark": "#FBFAF7"
+          }
+        },
+        {
+          "name": "bg/blend",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0F0E250F",
+            "Dark": "#FBFAF70F"
+          }
+        },
+        {
+          "name": "bg/contrast",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFFFFF",
+            "Dark": "#000000"
+          }
+        },
+        {
+          "name": "bg/black",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#000000",
+            "Dark": "#000000"
+          }
+        },
+        {
+          "name": "bg/white",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFFFFF",
+            "Dark": "#FFFFFF"
+          }
+        },
+        {
+          "name": "border/subtle",
+          "type": "COLOR",
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F4F4F5",
+            "Dark": "#18181B"
+          }
+        },
+        {
+          "name": "border/default",
+          "type": "COLOR",
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#E4E4E7",
+            "Dark": "#27272A"
+          }
+        },
+        {
+          "name": "border/strong",
+          "type": "COLOR",
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#D4D4D8",
+            "Dark": "#3F3F46"
+          }
+        },
+        {
+          "name": "border/blend",
+          "type": "COLOR",
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#71717A33",
+            "Dark": "#71717A33"
+          }
+        },
+        {
+          "name": "border/focus",
+          "type": "COLOR",
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#3038FC",
+            "Dark": "#5F6EFD"
+          }
+        },
+        {
+          "name": "border/inverse",
+          "type": "COLOR",
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBFAF7",
+            "Dark": "#0F0E25"
+          }
+        },
+        {
+          "name": "accent/default",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#3038FC",
+            "Dark": "#5F6EFD"
+          }
+        },
+        {
+          "name": "accent/hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#1F27E5",
+            "Dark": "#8D98FD"
+          }
+        },
+        {
+          "name": "accent/pressed",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#181EB8",
+            "Dark": "#3038FC"
+          }
+        },
+        {
+          "name": "accent/selected",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#3038FC",
+            "Dark": "#5F6EFD"
+          }
+        },
+        {
+          "name": "accent/deselected",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EEF0FF",
+            "Dark": "#181EB866"
+          }
+        },
+        {
+          "name": "accent/selected-fg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBFAF7",
+            "Dark": "#FBFAF7"
+          }
+        },
+        {
+          "name": "accent/deselected-fg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#181EB8",
+            "Dark": "#8D98FD"
+          }
+        },
+        {
+          "name": "accent/subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EEF0FF",
+            "Dark": "#151A8F"
+          }
+        },
+        {
+          "name": "danger/bg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FEF2F2",
+            "Dark": "#7F1D1D"
+          }
+        },
+        {
+          "name": "danger/default",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#DC2626",
+            "Dark": "#F87171"
+          }
+        },
+        {
+          "name": "danger/fg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#B91C1C",
+            "Dark": "#FCA5A5"
+          }
+        },
+        {
+          "name": "danger/hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#B91C1C",
+            "Dark": "#FCA5A5"
+          }
+        },
+        {
+          "name": "success/bg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#ECFDF5",
+            "Dark": "#064E3B"
+          }
+        },
+        {
+          "name": "success/default",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#059669",
+            "Dark": "#34D399"
+          }
+        },
+        {
+          "name": "success/fg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#047857",
+            "Dark": "#6EE7B7"
+          }
+        },
+        {
+          "name": "success/hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#047857",
+            "Dark": "#6EE7B7"
+          }
+        },
+        {
+          "name": "warning/bg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFFBEB",
+            "Dark": "#78350F"
+          }
+        },
+        {
+          "name": "warning/default",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F59E0B",
+            "Dark": "#FBBF24"
+          }
+        },
+        {
+          "name": "warning/fg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#92400E",
+            "Dark": "#FCD34D"
+          }
+        },
+        {
+          "name": "warning/hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#D97706",
+            "Dark": "#FCD34D"
+          }
+        },
+        {
+          "name": "info/bg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F0F9FF",
+            "Dark": "#0C4A6E"
+          }
+        },
+        {
+          "name": "info/default",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0EA5E9",
+            "Dark": "#38BDF8"
+          }
+        },
+        {
+          "name": "info/fg",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0369A1",
+            "Dark": "#7DD3FC"
+          }
+        },
+        {
+          "name": "info/hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0284C7",
+            "Dark": "#7DD3FC"
+          }
+        },
+        {
+          "name": "decorative-fg/blue-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#8D98FD",
+            "Dark": "#B7BEFE"
+          }
+        },
+        {
+          "name": "decorative-fg/blue-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#3038FC",
+            "Dark": "#5F6EFD"
+          }
+        },
+        {
+          "name": "decorative-fg/blue-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#181EB8",
+            "Dark": "#1F27E5"
+          }
+        },
+        {
+          "name": "decorative-fg/orange-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FDBA74",
+            "Dark": "#FED7AA"
+          }
+        },
+        {
+          "name": "decorative-fg/orange-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F97316",
+            "Dark": "#FB923C"
+          }
+        },
+        {
+          "name": "decorative-fg/orange-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#C2410C",
+            "Dark": "#EA580C"
+          }
+        },
+        {
+          "name": "decorative-fg/amber-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FCD34D",
+            "Dark": "#FDE68A"
+          }
+        },
+        {
+          "name": "decorative-fg/amber-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F59E0B",
+            "Dark": "#FBBF24"
+          }
+        },
+        {
+          "name": "decorative-fg/amber-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#B45309",
+            "Dark": "#D97706"
+          }
+        },
+        {
+          "name": "decorative-fg/yellow-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FDE047",
+            "Dark": "#FEF08A"
+          }
+        },
+        {
+          "name": "decorative-fg/yellow-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EAB308",
+            "Dark": "#FACC15"
+          }
+        },
+        {
+          "name": "decorative-fg/yellow-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#A16207",
+            "Dark": "#CA8A04"
+          }
+        },
+        {
+          "name": "decorative-fg/lime-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#BEF264",
+            "Dark": "#D9F99D"
+          }
+        },
+        {
+          "name": "decorative-fg/lime-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#84CC16",
+            "Dark": "#A3E635"
+          }
+        },
+        {
+          "name": "decorative-fg/lime-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#4D7C0F",
+            "Dark": "#65A30D"
+          }
+        },
+        {
+          "name": "decorative-fg/emerald-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#6EE7B7",
+            "Dark": "#A7F3D0"
+          }
+        },
+        {
+          "name": "decorative-fg/emerald-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#10B981",
+            "Dark": "#34D399"
+          }
+        },
+        {
+          "name": "decorative-fg/emerald-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#047857",
+            "Dark": "#059669"
+          }
+        },
+        {
+          "name": "decorative-fg/cyan-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#67E8F9",
+            "Dark": "#A5F3FC"
+          }
+        },
+        {
+          "name": "decorative-fg/cyan-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#06B6D4",
+            "Dark": "#22D3EE"
+          }
+        },
+        {
+          "name": "decorative-fg/cyan-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0E7490",
+            "Dark": "#0891B2"
+          }
+        },
+        {
+          "name": "decorative-fg/sky-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#7DD3FC",
+            "Dark": "#BAE6FD"
+          }
+        },
+        {
+          "name": "decorative-fg/sky-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0EA5E9",
+            "Dark": "#38BDF8"
+          }
+        },
+        {
+          "name": "decorative-fg/sky-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0369A1",
+            "Dark": "#0284C7"
+          }
+        },
+        {
+          "name": "decorative-fg/indigo-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#A5B4FC",
+            "Dark": "#C7D2FE"
+          }
+        },
+        {
+          "name": "decorative-fg/indigo-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#6366F1",
+            "Dark": "#818CF8"
+          }
+        },
+        {
+          "name": "decorative-fg/indigo-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#4338CA",
+            "Dark": "#4F46E5"
+          }
+        },
+        {
+          "name": "decorative-fg/violet-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#C4B5FD",
+            "Dark": "#DDD6FE"
+          }
+        },
+        {
+          "name": "decorative-fg/violet-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#8B5CF6",
+            "Dark": "#A78BFA"
+          }
+        },
+        {
+          "name": "decorative-fg/violet-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#6D28D9",
+            "Dark": "#7C3AED"
+          }
+        },
+        {
+          "name": "decorative-fg/pink-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F9A8D4",
+            "Dark": "#FBCFE8"
+          }
+        },
+        {
+          "name": "decorative-fg/pink-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EC4899",
+            "Dark": "#F472B6"
+          }
+        },
+        {
+          "name": "decorative-fg/pink-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#BE185D",
+            "Dark": "#DB2777"
+          }
+        },
+        {
+          "name": "decorative-fg/rose-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FDA4AF",
+            "Dark": "#FECDD3"
+          }
+        },
+        {
+          "name": "decorative-fg/rose-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F43F5E",
+            "Dark": "#FB7185"
+          }
+        },
+        {
+          "name": "decorative-fg/rose-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#BE123C",
+            "Dark": "#E11D48"
+          }
+        },
+        {
+          "name": "decorative-fg/red-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FCA5A5",
+            "Dark": "#FECACA"
+          }
+        },
+        {
+          "name": "decorative-fg/red-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EF4444",
+            "Dark": "#F87171"
+          }
+        },
+        {
+          "name": "decorative-fg/red-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#B91C1C",
+            "Dark": "#DC2626"
+          }
+        },
+        {
+          "name": "decorative-fg/cream-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBFAF7",
+            "Dark": "#FBFAF7"
+          }
+        },
+        {
+          "name": "decorative-fg/cream-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F6F4EE",
+            "Dark": "#F6F4EE"
+          }
+        },
+        {
+          "name": "decorative-fg/cream-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EEEBE1",
+            "Dark": "#EEEBE1"
+          }
+        },
+        {
+          "name": "decorative-fg/navy-soft",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#1A1833",
+            "Dark": "#1A1833"
+          }
+        },
+        {
+          "name": "decorative-fg/navy-bold",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0F0E25",
+            "Dark": "#0F0E25"
+          }
+        },
+        {
+          "name": "decorative-fg/navy-dark",
+          "type": "COLOR",
+          "scopes": [
+            "TEXT_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#070612",
+            "Dark": "#070612"
+          }
+        },
+        {
+          "name": "decorative-bg/blue-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#EEF0FF",
+            "Dark": "#080B3D"
+          }
+        },
+        {
+          "name": "decorative-bg/blue-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#DADCFF",
+            "Dark": "#10166B"
+          }
+        },
+        {
+          "name": "decorative-bg/blue-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#151A8F",
+            "Dark": "#181EB8"
+          }
+        },
+        {
+          "name": "decorative-bg/orange-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FFF7ED",
+            "Dark": "#431407"
+          }
+        },
+        {
+          "name": "decorative-bg/orange-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FFEDD5",
+            "Dark": "#7C2D12"
+          }
+        },
+        {
+          "name": "decorative-bg/orange-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#9A3412",
+            "Dark": "#C2410C"
+          }
+        },
+        {
+          "name": "decorative-bg/amber-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FFFBEB",
+            "Dark": "#451A03"
+          }
+        },
+        {
+          "name": "decorative-bg/amber-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FEF3C7",
+            "Dark": "#78350F"
+          }
+        },
+        {
+          "name": "decorative-bg/amber-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#92400E",
+            "Dark": "#B45309"
+          }
+        },
+        {
+          "name": "decorative-bg/yellow-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FEFCE8",
+            "Dark": "#422006"
+          }
+        },
+        {
+          "name": "decorative-bg/yellow-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FEF9C3",
+            "Dark": "#713F12"
+          }
+        },
+        {
+          "name": "decorative-bg/yellow-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#854D0E",
+            "Dark": "#A16207"
+          }
+        },
+        {
+          "name": "decorative-bg/lime-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#F7FEE7",
+            "Dark": "#1A2E05"
+          }
+        },
+        {
+          "name": "decorative-bg/lime-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#ECFCCB",
+            "Dark": "#365314"
+          }
+        },
+        {
+          "name": "decorative-bg/lime-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#3F6212",
+            "Dark": "#4D7C0F"
+          }
+        },
+        {
+          "name": "decorative-bg/emerald-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#ECFDF5",
+            "Dark": "#022C22"
+          }
+        },
+        {
+          "name": "decorative-bg/emerald-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#D1FAE5",
+            "Dark": "#064E3B"
+          }
+        },
+        {
+          "name": "decorative-bg/emerald-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#065F46",
+            "Dark": "#047857"
+          }
+        },
+        {
+          "name": "decorative-bg/cyan-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#ECFEFF",
+            "Dark": "#083344"
+          }
+        },
+        {
+          "name": "decorative-bg/cyan-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#CFFAFE",
+            "Dark": "#164E63"
+          }
+        },
+        {
+          "name": "decorative-bg/cyan-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#155E75",
+            "Dark": "#0E7490"
+          }
+        },
+        {
+          "name": "decorative-bg/sky-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#F0F9FF",
+            "Dark": "#082F49"
+          }
+        },
+        {
+          "name": "decorative-bg/sky-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#E0F2FE",
+            "Dark": "#0C4A6E"
+          }
+        },
+        {
+          "name": "decorative-bg/sky-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#075985",
+            "Dark": "#0369A1"
+          }
+        },
+        {
+          "name": "decorative-bg/indigo-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#EEF2FF",
+            "Dark": "#1E1B4B"
+          }
+        },
+        {
+          "name": "decorative-bg/indigo-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#E0E7FF",
+            "Dark": "#312E81"
+          }
+        },
+        {
+          "name": "decorative-bg/indigo-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#3730A3",
+            "Dark": "#4338CA"
+          }
+        },
+        {
+          "name": "decorative-bg/violet-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#F5F3FF",
+            "Dark": "#2E1065"
+          }
+        },
+        {
+          "name": "decorative-bg/violet-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#EDE9FE",
+            "Dark": "#4C1D95"
+          }
+        },
+        {
+          "name": "decorative-bg/violet-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#5B21B6",
+            "Dark": "#6D28D9"
+          }
+        },
+        {
+          "name": "decorative-bg/pink-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FDF2F8",
+            "Dark": "#500724"
+          }
+        },
+        {
+          "name": "decorative-bg/pink-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FCE7F3",
+            "Dark": "#831843"
+          }
+        },
+        {
+          "name": "decorative-bg/pink-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#9D174D",
+            "Dark": "#BE185D"
+          }
+        },
+        {
+          "name": "decorative-bg/rose-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FFF1F2",
+            "Dark": "#4C0519"
+          }
+        },
+        {
+          "name": "decorative-bg/rose-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FFE4E6",
+            "Dark": "#881337"
+          }
+        },
+        {
+          "name": "decorative-bg/rose-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#9F1239",
+            "Dark": "#BE123C"
+          }
+        },
+        {
+          "name": "decorative-bg/red-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FEF2F2",
+            "Dark": "#450A0A"
+          }
+        },
+        {
+          "name": "decorative-bg/red-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FEE2E2",
+            "Dark": "#7F1D1D"
+          }
+        },
+        {
+          "name": "decorative-bg/red-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#991B1B",
+            "Dark": "#B91C1C"
+          }
+        },
+        {
+          "name": "decorative-bg/lavender-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#F2F1F6",
+            "Dark": "#2E1065"
+          }
+        },
+        {
+          "name": "decorative-bg/lavender-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#E5E3EB",
+            "Dark": "#4C1D95"
+          }
+        },
+        {
+          "name": "decorative-bg/lavender-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#5B21B6",
+            "Dark": "#6D28D9"
+          }
+        },
+        {
+          "name": "decorative-bg/mint-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#E9F2EC",
+            "Dark": "#022C22"
+          }
+        },
+        {
+          "name": "decorative-bg/mint-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#DCE8DF",
+            "Dark": "#064E3B"
+          }
+        },
+        {
+          "name": "decorative-bg/mint-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#065F46",
+            "Dark": "#047857"
+          }
+        },
+        {
+          "name": "decorative-bg/peach-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#F1ECE3",
+            "Dark": "#451A03"
+          }
+        },
+        {
+          "name": "decorative-bg/peach-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#E5D8C7",
+            "Dark": "#78350F"
+          }
+        },
+        {
+          "name": "decorative-bg/peach-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#92400E",
+            "Dark": "#B45309"
+          }
+        },
+        {
+          "name": "decorative-bg/periwinkle-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#E8EDF3",
+            "Dark": "#1E1B4B"
+          }
+        },
+        {
+          "name": "decorative-bg/periwinkle-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#DBE4ED",
+            "Dark": "#312E81"
+          }
+        },
+        {
+          "name": "decorative-bg/periwinkle-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#3730A3",
+            "Dark": "#4338CA"
+          }
+        },
+        {
+          "name": "decorative-bg/cream-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#FBFAF7",
+            "Dark": "#FBFAF7"
+          }
+        },
+        {
+          "name": "decorative-bg/cream-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#F6F4EE",
+            "Dark": "#F6F4EE"
+          }
+        },
+        {
+          "name": "decorative-bg/cream-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#EEEBE1",
+            "Dark": "#EEEBE1"
+          }
+        },
+        {
+          "name": "decorative-bg/navy-soft",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#1A1833",
+            "Dark": "#1A1833"
+          }
+        },
+        {
+          "name": "decorative-bg/navy-bold",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#0F0E25",
+            "Dark": "#0F0E25"
+          }
+        },
+        {
+          "name": "decorative-bg/navy-dark",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "valuesByMode": {
+            "Light": "#070612",
+            "Dark": "#070612"
+          }
+        },
+        {
+          "name": "color/blue/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F6F7FF",
+            "Dark": "#F6F7FF"
+          }
+        },
+        {
+          "name": "color/blue/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EEF0FF",
+            "Dark": "#EEF0FF"
+          }
+        },
+        {
+          "name": "color/blue/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#DADCFF",
+            "Dark": "#DADCFF"
+          }
+        },
+        {
+          "name": "color/blue/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#B7BEFE",
+            "Dark": "#B7BEFE"
+          }
+        },
+        {
+          "name": "color/blue/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#8D98FD",
+            "Dark": "#8D98FD"
+          }
+        },
+        {
+          "name": "color/blue/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#5F6EFD",
+            "Dark": "#5F6EFD"
+          }
+        },
+        {
+          "name": "color/blue/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#3038FC",
+            "Dark": "#3038FC"
+          }
+        },
+        {
+          "name": "color/blue/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#1F27E5",
+            "Dark": "#1F27E5"
+          }
+        },
+        {
+          "name": "color/blue/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#181EB8",
+            "Dark": "#181EB8"
+          }
+        },
+        {
+          "name": "color/blue/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#151A8F",
+            "Dark": "#151A8F"
+          }
+        },
+        {
+          "name": "color/blue/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#10166B",
+            "Dark": "#10166B"
+          }
+        },
+        {
+          "name": "color/blue/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#080B3D",
+            "Dark": "#080B3D"
+          }
+        },
+        {
+          "name": "color/blue/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#04061F",
+            "Dark": "#04061F"
+          }
+        },
+        {
+          "name": "color/volt/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FDFFF2",
+            "Dark": "#FDFFF2"
+          }
+        },
+        {
+          "name": "color/volt/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBFFE5",
+            "Dark": "#FBFFE5"
+          }
+        },
+        {
+          "name": "color/volt/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F4FFBE",
+            "Dark": "#F4FFBE"
+          }
+        },
+        {
+          "name": "color/volt/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#ECFF8A",
+            "Dark": "#ECFF8A"
+          }
+        },
+        {
+          "name": "color/volt/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#E6FF57",
+            "Dark": "#E6FF57"
+          }
+        },
+        {
+          "name": "color/volt/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#E2FF2C",
+            "Dark": "#E2FF2C"
+          }
+        },
+        {
+          "name": "color/volt/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#DFFF04",
+            "Dark": "#DFFF04"
+          }
+        },
+        {
+          "name": "color/volt/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#C5E500",
+            "Dark": "#C5E500"
+          }
+        },
+        {
+          "name": "color/volt/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#9EB800",
+            "Dark": "#9EB800"
+          }
+        },
+        {
+          "name": "color/volt/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#7B8F00",
+            "Dark": "#7B8F00"
+          }
+        },
+        {
+          "name": "color/volt/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#5C6B00",
+            "Dark": "#5C6B00"
+          }
+        },
+        {
+          "name": "color/volt/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#2B3100",
+            "Dark": "#2B3100"
+          }
+        },
+        {
+          "name": "color/volt/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#141800",
+            "Dark": "#141800"
+          }
+        },
+        {
+          "name": "color/zinc/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FCFCFC",
+            "Dark": "#FCFCFC"
+          }
+        },
+        {
+          "name": "color/zinc/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FAFAFA",
+            "Dark": "#FAFAFA"
+          }
+        },
+        {
+          "name": "color/zinc/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F4F4F5",
+            "Dark": "#F4F4F5"
+          }
+        },
+        {
+          "name": "color/zinc/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#E4E4E7",
+            "Dark": "#E4E4E7"
+          }
+        },
+        {
+          "name": "color/zinc/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#D4D4D8",
+            "Dark": "#D4D4D8"
+          }
+        },
+        {
+          "name": "color/zinc/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#A1A1AA",
+            "Dark": "#A1A1AA"
+          }
+        },
+        {
+          "name": "color/zinc/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#71717A",
+            "Dark": "#71717A"
+          }
+        },
+        {
+          "name": "color/zinc/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#52525B",
+            "Dark": "#52525B"
+          }
+        },
+        {
+          "name": "color/zinc/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#3F3F46",
+            "Dark": "#3F3F46"
+          }
+        },
+        {
+          "name": "color/zinc/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#27272A",
+            "Dark": "#27272A"
+          }
+        },
+        {
+          "name": "color/zinc/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#18181B",
+            "Dark": "#18181B"
+          }
+        },
+        {
+          "name": "color/zinc/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#09090B",
+            "Dark": "#09090B"
+          }
+        },
+        {
+          "name": "color/zinc/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#040405",
+            "Dark": "#040405"
+          }
+        },
+        {
+          "name": "color/red/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FEF8F8",
+            "Dark": "#FEF8F8"
+          }
+        },
+        {
+          "name": "color/red/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FEF2F2",
+            "Dark": "#FEF2F2"
+          }
+        },
+        {
+          "name": "color/red/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FEE2E2",
+            "Dark": "#FEE2E2"
+          }
+        },
+        {
+          "name": "color/red/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FECACA",
+            "Dark": "#FECACA"
+          }
+        },
+        {
+          "name": "color/red/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FCA5A5",
+            "Dark": "#FCA5A5"
+          }
+        },
+        {
+          "name": "color/red/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F87171",
+            "Dark": "#F87171"
+          }
+        },
+        {
+          "name": "color/red/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EF4444",
+            "Dark": "#EF4444"
+          }
+        },
+        {
+          "name": "color/red/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#DC2626",
+            "Dark": "#DC2626"
+          }
+        },
+        {
+          "name": "color/red/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#B91C1C",
+            "Dark": "#B91C1C"
+          }
+        },
+        {
+          "name": "color/red/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#991B1B",
+            "Dark": "#991B1B"
+          }
+        },
+        {
+          "name": "color/red/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#7F1D1D",
+            "Dark": "#7F1D1D"
+          }
+        },
+        {
+          "name": "color/red/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#450A0A",
+            "Dark": "#450A0A"
+          }
+        },
+        {
+          "name": "color/red/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#240505",
+            "Dark": "#240505"
+          }
+        },
+        {
+          "name": "color/orange/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFFBF6",
+            "Dark": "#FFFBF6"
+          }
+        },
+        {
+          "name": "color/orange/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFF7ED",
+            "Dark": "#FFF7ED"
+          }
+        },
+        {
+          "name": "color/orange/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFEDD5",
+            "Dark": "#FFEDD5"
+          }
+        },
+        {
+          "name": "color/orange/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FED7AA",
+            "Dark": "#FED7AA"
+          }
+        },
+        {
+          "name": "color/orange/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FDBA74",
+            "Dark": "#FDBA74"
+          }
+        },
+        {
+          "name": "color/orange/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FB923C",
+            "Dark": "#FB923C"
+          }
+        },
+        {
+          "name": "color/orange/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F97316",
+            "Dark": "#F97316"
+          }
+        },
+        {
+          "name": "color/orange/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EA580C",
+            "Dark": "#EA580C"
+          }
+        },
+        {
+          "name": "color/orange/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#C2410C",
+            "Dark": "#C2410C"
+          }
+        },
+        {
+          "name": "color/orange/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#9A3412",
+            "Dark": "#9A3412"
+          }
+        },
+        {
+          "name": "color/orange/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#7C2D12",
+            "Dark": "#7C2D12"
+          }
+        },
+        {
+          "name": "color/orange/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#431407",
+            "Dark": "#431407"
+          }
+        },
+        {
+          "name": "color/orange/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#220A03",
+            "Dark": "#220A03"
+          }
+        },
+        {
+          "name": "color/amber/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFFDF5",
+            "Dark": "#FFFDF5"
+          }
+        },
+        {
+          "name": "color/amber/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFFBEB",
+            "Dark": "#FFFBEB"
+          }
+        },
+        {
+          "name": "color/amber/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FEF3C7",
+            "Dark": "#FEF3C7"
+          }
+        },
+        {
+          "name": "color/amber/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FDE68A",
+            "Dark": "#FDE68A"
+          }
+        },
+        {
+          "name": "color/amber/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FCD34D",
+            "Dark": "#FCD34D"
+          }
+        },
+        {
+          "name": "color/amber/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBBF24",
+            "Dark": "#FBBF24"
+          }
+        },
+        {
+          "name": "color/amber/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F59E0B",
+            "Dark": "#F59E0B"
+          }
+        },
+        {
+          "name": "color/amber/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#D97706",
+            "Dark": "#D97706"
+          }
+        },
+        {
+          "name": "color/amber/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#B45309",
+            "Dark": "#B45309"
+          }
+        },
+        {
+          "name": "color/amber/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#92400E",
+            "Dark": "#92400E"
+          }
+        },
+        {
+          "name": "color/amber/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#78350F",
+            "Dark": "#78350F"
+          }
+        },
+        {
+          "name": "color/amber/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#451A03",
+            "Dark": "#451A03"
+          }
+        },
+        {
+          "name": "color/amber/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#240D01",
+            "Dark": "#240D01"
+          }
+        },
+        {
+          "name": "color/yellow/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FEFDF3",
+            "Dark": "#FEFDF3"
+          }
+        },
+        {
+          "name": "color/yellow/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FEFCE8",
+            "Dark": "#FEFCE8"
+          }
+        },
+        {
+          "name": "color/yellow/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FEF9C3",
+            "Dark": "#FEF9C3"
+          }
+        },
+        {
+          "name": "color/yellow/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FEF08A",
+            "Dark": "#FEF08A"
+          }
+        },
+        {
+          "name": "color/yellow/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FDE047",
+            "Dark": "#FDE047"
+          }
+        },
+        {
+          "name": "color/yellow/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FACC15",
+            "Dark": "#FACC15"
+          }
+        },
+        {
+          "name": "color/yellow/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EAB308",
+            "Dark": "#EAB308"
+          }
+        },
+        {
+          "name": "color/yellow/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#CA8A04",
+            "Dark": "#CA8A04"
+          }
+        },
+        {
+          "name": "color/yellow/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#A16207",
+            "Dark": "#A16207"
+          }
+        },
+        {
+          "name": "color/yellow/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#854D0E",
+            "Dark": "#854D0E"
+          }
+        },
+        {
+          "name": "color/yellow/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#713F12",
+            "Dark": "#713F12"
+          }
+        },
+        {
+          "name": "color/yellow/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#422006",
+            "Dark": "#422006"
+          }
+        },
+        {
+          "name": "color/yellow/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#211002",
+            "Dark": "#211002"
+          }
+        },
+        {
+          "name": "color/lime/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FAFFE8",
+            "Dark": "#FAFFE8"
+          }
+        },
+        {
+          "name": "color/lime/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F7FEE7",
+            "Dark": "#F7FEE7"
+          }
+        },
+        {
+          "name": "color/lime/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#ECFCCB",
+            "Dark": "#ECFCCB"
+          }
+        },
+        {
+          "name": "color/lime/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#D9F99D",
+            "Dark": "#D9F99D"
+          }
+        },
+        {
+          "name": "color/lime/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#BEF264",
+            "Dark": "#BEF264"
+          }
+        },
+        {
+          "name": "color/lime/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#A3E635",
+            "Dark": "#A3E635"
+          }
+        },
+        {
+          "name": "color/lime/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#84CC16",
+            "Dark": "#84CC16"
+          }
+        },
+        {
+          "name": "color/lime/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#65A30D",
+            "Dark": "#65A30D"
+          }
+        },
+        {
+          "name": "color/lime/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#4D7C0F",
+            "Dark": "#4D7C0F"
+          }
+        },
+        {
+          "name": "color/lime/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#3F6212",
+            "Dark": "#3F6212"
+          }
+        },
+        {
+          "name": "color/lime/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#365314",
+            "Dark": "#365314"
+          }
+        },
+        {
+          "name": "color/lime/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#1A2E05",
+            "Dark": "#1A2E05"
+          }
+        },
+        {
+          "name": "color/lime/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0D1702",
+            "Dark": "#0D1702"
+          }
+        },
+        {
+          "name": "color/emerald/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F3FEF8",
+            "Dark": "#F3FEF8"
+          }
+        },
+        {
+          "name": "color/emerald/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#ECFDF5",
+            "Dark": "#ECFDF5"
+          }
+        },
+        {
+          "name": "color/emerald/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#D1FAE5",
+            "Dark": "#D1FAE5"
+          }
+        },
+        {
+          "name": "color/emerald/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#A7F3D0",
+            "Dark": "#A7F3D0"
+          }
+        },
+        {
+          "name": "color/emerald/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#6EE7B7",
+            "Dark": "#6EE7B7"
+          }
+        },
+        {
+          "name": "color/emerald/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#34D399",
+            "Dark": "#34D399"
+          }
+        },
+        {
+          "name": "color/emerald/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#10B981",
+            "Dark": "#10B981"
+          }
+        },
+        {
+          "name": "color/emerald/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#059669",
+            "Dark": "#059669"
+          }
+        },
+        {
+          "name": "color/emerald/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#047857",
+            "Dark": "#047857"
+          }
+        },
+        {
+          "name": "color/emerald/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#065F46",
+            "Dark": "#065F46"
+          }
+        },
+        {
+          "name": "color/emerald/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#064E3B",
+            "Dark": "#064E3B"
+          }
+        },
+        {
+          "name": "color/emerald/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#022C22",
+            "Dark": "#022C22"
+          }
+        },
+        {
+          "name": "color/emerald/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#011610",
+            "Dark": "#011610"
+          }
+        },
+        {
+          "name": "color/cyan/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F2FDFE",
+            "Dark": "#F2FDFE"
+          }
+        },
+        {
+          "name": "color/cyan/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#ECFEFF",
+            "Dark": "#ECFEFF"
+          }
+        },
+        {
+          "name": "color/cyan/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#CFFAFE",
+            "Dark": "#CFFAFE"
+          }
+        },
+        {
+          "name": "color/cyan/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#A5F3FC",
+            "Dark": "#A5F3FC"
+          }
+        },
+        {
+          "name": "color/cyan/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#67E8F9",
+            "Dark": "#67E8F9"
+          }
+        },
+        {
+          "name": "color/cyan/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#22D3EE",
+            "Dark": "#22D3EE"
+          }
+        },
+        {
+          "name": "color/cyan/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#06B6D4",
+            "Dark": "#06B6D4"
+          }
+        },
+        {
+          "name": "color/cyan/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0891B2",
+            "Dark": "#0891B2"
+          }
+        },
+        {
+          "name": "color/cyan/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0E7490",
+            "Dark": "#0E7490"
+          }
+        },
+        {
+          "name": "color/cyan/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#155E75",
+            "Dark": "#155E75"
+          }
+        },
+        {
+          "name": "color/cyan/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#164E63",
+            "Dark": "#164E63"
+          }
+        },
+        {
+          "name": "color/cyan/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#083344",
+            "Dark": "#083344"
+          }
+        },
+        {
+          "name": "color/cyan/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#041B24",
+            "Dark": "#041B24"
+          }
+        },
+        {
+          "name": "color/sky/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F6FCFF",
+            "Dark": "#F6FCFF"
+          }
+        },
+        {
+          "name": "color/sky/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F0F9FF",
+            "Dark": "#F0F9FF"
+          }
+        },
+        {
+          "name": "color/sky/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#E0F2FE",
+            "Dark": "#E0F2FE"
+          }
+        },
+        {
+          "name": "color/sky/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#BAE6FD",
+            "Dark": "#BAE6FD"
+          }
+        },
+        {
+          "name": "color/sky/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#7DD3FC",
+            "Dark": "#7DD3FC"
+          }
+        },
+        {
+          "name": "color/sky/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#38BDF8",
+            "Dark": "#38BDF8"
+          }
+        },
+        {
+          "name": "color/sky/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0EA5E9",
+            "Dark": "#0EA5E9"
+          }
+        },
+        {
+          "name": "color/sky/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0284C7",
+            "Dark": "#0284C7"
+          }
+        },
+        {
+          "name": "color/sky/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0369A1",
+            "Dark": "#0369A1"
+          }
+        },
+        {
+          "name": "color/sky/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#075985",
+            "Dark": "#075985"
+          }
+        },
+        {
+          "name": "color/sky/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0C4A6E",
+            "Dark": "#0C4A6E"
+          }
+        },
+        {
+          "name": "color/sky/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#082F49",
+            "Dark": "#082F49"
+          }
+        },
+        {
+          "name": "color/sky/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#041825",
+            "Dark": "#041825"
+          }
+        },
+        {
+          "name": "color/indigo/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F7F8FF",
+            "Dark": "#F7F8FF"
+          }
+        },
+        {
+          "name": "color/indigo/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EEF2FF",
+            "Dark": "#EEF2FF"
+          }
+        },
+        {
+          "name": "color/indigo/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#E0E7FF",
+            "Dark": "#E0E7FF"
+          }
+        },
+        {
+          "name": "color/indigo/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#C7D2FE",
+            "Dark": "#C7D2FE"
+          }
+        },
+        {
+          "name": "color/indigo/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#A5B4FC",
+            "Dark": "#A5B4FC"
+          }
+        },
+        {
+          "name": "color/indigo/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#818CF8",
+            "Dark": "#818CF8"
+          }
+        },
+        {
+          "name": "color/indigo/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#6366F1",
+            "Dark": "#6366F1"
+          }
+        },
+        {
+          "name": "color/indigo/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#4F46E5",
+            "Dark": "#4F46E5"
+          }
+        },
+        {
+          "name": "color/indigo/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#4338CA",
+            "Dark": "#4338CA"
+          }
+        },
+        {
+          "name": "color/indigo/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#3730A3",
+            "Dark": "#3730A3"
+          }
+        },
+        {
+          "name": "color/indigo/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#312E81",
+            "Dark": "#312E81"
+          }
+        },
+        {
+          "name": "color/indigo/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#1E1B4B",
+            "Dark": "#1E1B4B"
+          }
+        },
+        {
+          "name": "color/indigo/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0F0D25",
+            "Dark": "#0F0D25"
+          }
+        },
+        {
+          "name": "color/violet/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F9F7FF",
+            "Dark": "#F9F7FF"
+          }
+        },
+        {
+          "name": "color/violet/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F5F3FF",
+            "Dark": "#F5F3FF"
+          }
+        },
+        {
+          "name": "color/violet/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EDE9FE",
+            "Dark": "#EDE9FE"
+          }
+        },
+        {
+          "name": "color/violet/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#DDD6FE",
+            "Dark": "#DDD6FE"
+          }
+        },
+        {
+          "name": "color/violet/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#C4B5FD",
+            "Dark": "#C4B5FD"
+          }
+        },
+        {
+          "name": "color/violet/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#A78BFA",
+            "Dark": "#A78BFA"
+          }
+        },
+        {
+          "name": "color/violet/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#8B5CF6",
+            "Dark": "#8B5CF6"
+          }
+        },
+        {
+          "name": "color/violet/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#7C3AED",
+            "Dark": "#7C3AED"
+          }
+        },
+        {
+          "name": "color/violet/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#6D28D9",
+            "Dark": "#6D28D9"
+          }
+        },
+        {
+          "name": "color/violet/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#5B21B6",
+            "Dark": "#5B21B6"
+          }
+        },
+        {
+          "name": "color/violet/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#4C1D95",
+            "Dark": "#4C1D95"
+          }
+        },
+        {
+          "name": "color/violet/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#2E1065",
+            "Dark": "#2E1065"
+          }
+        },
+        {
+          "name": "color/violet/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#170830",
+            "Dark": "#170830"
+          }
+        },
+        {
+          "name": "color/pink/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFF5FA",
+            "Dark": "#FFF5FA"
+          }
+        },
+        {
+          "name": "color/pink/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FDF2F8",
+            "Dark": "#FDF2F8"
+          }
+        },
+        {
+          "name": "color/pink/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FCE7F3",
+            "Dark": "#FCE7F3"
+          }
+        },
+        {
+          "name": "color/pink/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBCFE8",
+            "Dark": "#FBCFE8"
+          }
+        },
+        {
+          "name": "color/pink/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F9A8D4",
+            "Dark": "#F9A8D4"
+          }
+        },
+        {
+          "name": "color/pink/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F472B6",
+            "Dark": "#F472B6"
+          }
+        },
+        {
+          "name": "color/pink/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EC4899",
+            "Dark": "#EC4899"
+          }
+        },
+        {
+          "name": "color/pink/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#DB2777",
+            "Dark": "#DB2777"
+          }
+        },
+        {
+          "name": "color/pink/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#BE185D",
+            "Dark": "#BE185D"
+          }
+        },
+        {
+          "name": "color/pink/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#9D174D",
+            "Dark": "#9D174D"
+          }
+        },
+        {
+          "name": "color/pink/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#831843",
+            "Dark": "#831843"
+          }
+        },
+        {
+          "name": "color/pink/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#500724",
+            "Dark": "#500724"
+          }
+        },
+        {
+          "name": "color/pink/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#280412",
+            "Dark": "#280412"
+          }
+        },
+        {
+          "name": "color/rose/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFF6F7",
+            "Dark": "#FFF6F7"
+          }
+        },
+        {
+          "name": "color/rose/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFF1F2",
+            "Dark": "#FFF1F2"
+          }
+        },
+        {
+          "name": "color/rose/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FFE4E6",
+            "Dark": "#FFE4E6"
+          }
+        },
+        {
+          "name": "color/rose/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FECDD3",
+            "Dark": "#FECDD3"
+          }
+        },
+        {
+          "name": "color/rose/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FDA4AF",
+            "Dark": "#FDA4AF"
+          }
+        },
+        {
+          "name": "color/rose/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FB7185",
+            "Dark": "#FB7185"
+          }
+        },
+        {
+          "name": "color/rose/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F43F5E",
+            "Dark": "#F43F5E"
+          }
+        },
+        {
+          "name": "color/rose/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#E11D48",
+            "Dark": "#E11D48"
+          }
+        },
+        {
+          "name": "color/rose/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#BE123C",
+            "Dark": "#BE123C"
+          }
+        },
+        {
+          "name": "color/rose/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#9F1239",
+            "Dark": "#9F1239"
+          }
+        },
+        {
+          "name": "color/rose/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#881337",
+            "Dark": "#881337"
+          }
+        },
+        {
+          "name": "color/rose/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#4C0519",
+            "Dark": "#4C0519"
+          }
+        },
+        {
+          "name": "color/rose/975",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_FILLS",
+            "STROKE_COLOR",
+            "EFFECT_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#26020D",
+            "Dark": "#26020D"
+          }
+        },
+        {
+          "name": "bg/cream/25",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#FBFAF7",
+            "Dark": "#FBFAF7"
+          }
+        },
+        {
+          "name": "bg/cream/50",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#F6F4EE",
+            "Dark": "#F6F4EE"
+          }
+        },
+        {
+          "name": "bg/cream/100",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#EEEBE1",
+            "Dark": "#EEEBE1"
+          }
+        },
+        {
+          "name": "bg/navy/900",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#1A1833",
+            "Dark": "#1A1833"
+          }
+        },
+        {
+          "name": "bg/navy/950",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#0F0E25",
+            "Dark": "#0F0E25"
+          }
+        },
+        {
+          "name": "bg/navy/975",
+          "type": "COLOR",
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE_COLOR"
+          ],
+          "valuesByMode": {
+            "Light": "#070612",
+            "Dark": "#070612"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Spiro Spacing",
+      "modes": [
+        "Default"
+      ],
+      "variables": [
+        {
+          "name": "space/0",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 0.0
+          }
+        },
+        {
+          "name": "space/1",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 4.0
+          }
+        },
+        {
+          "name": "space/2",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 8.0
+          }
+        },
+        {
+          "name": "space/3",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 12.0
+          }
+        },
+        {
+          "name": "space/4",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 16.0
+          }
+        },
+        {
+          "name": "space/5",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 20.0
+          }
+        },
+        {
+          "name": "space/6",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 24.0
+          }
+        },
+        {
+          "name": "space/8",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 32.0
+          }
+        },
+        {
+          "name": "space/10",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 40.0
+          }
+        },
+        {
+          "name": "space/12",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 48.0
+          }
+        },
+        {
+          "name": "space/16",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 64.0
+          }
+        },
+        {
+          "name": "space/20",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 80.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Spiro Radius",
+      "modes": [
+        "Default"
+      ],
+      "variables": [
+        {
+          "name": "radius/0",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 0.0
+          }
+        },
+        {
+          "name": "radius/2",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 2.0
+          }
+        },
+        {
+          "name": "radius/4",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 4.0
+          }
+        },
+        {
+          "name": "radius/8",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 8.0
+          }
+        },
+        {
+          "name": "radius/12",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 12.0
+          }
+        },
+        {
+          "name": "radius/16",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 16.0
+          }
+        },
+        {
+          "name": "radius/24",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 24.0
+          }
+        },
+        {
+          "name": "radius/32",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 32.0
+          }
+        },
+        {
+          "name": "radius/40",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 40.0
+          }
+        },
+        {
+          "name": "radius/pill",
+          "type": "FLOAT",
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "valuesByMode": {
+            "Default": 9999
+          }
+        }
+      ]
+    },
+    {
+      "name": "Spiro Stroke",
+      "modes": [
+        "Default"
+      ],
+      "variables": [
+        {
+          "name": "stroke/0",
+          "type": "FLOAT",
+          "scopes": [
+            "STROKE_FLOAT"
+          ],
+          "valuesByMode": {
+            "Default": 0
+          }
+        },
+        {
+          "name": "stroke/1",
+          "type": "FLOAT",
+          "scopes": [
+            "STROKE_FLOAT"
+          ],
+          "valuesByMode": {
+            "Default": 1
+          }
+        },
+        {
+          "name": "stroke/2",
+          "type": "FLOAT",
+          "scopes": [
+            "STROKE_FLOAT"
+          ],
+          "valuesByMode": {
+            "Default": 2
+          }
+        },
+        {
+          "name": "stroke/3",
+          "type": "FLOAT",
+          "scopes": [
+            "STROKE_FLOAT"
+          ],
+          "valuesByMode": {
+            "Default": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Spiro Opacity",
+      "modes": [
+        "Default"
+      ],
+      "variables": [
+        {
+          "name": "opacity/0",
+          "type": "FLOAT",
+          "scopes": [
+            "OPACITY"
+          ],
+          "valuesByMode": {
+            "Default": 0
+          }
+        },
+        {
+          "name": "opacity/1",
+          "type": "FLOAT",
+          "scopes": [
+            "OPACITY"
+          ],
+          "valuesByMode": {
+            "Default": 1
+          }
+        },
+        {
+          "name": "opacity/5",
+          "type": "FLOAT",
+          "scopes": [
+            "OPACITY"
+          ],
+          "valuesByMode": {
+            "Default": 5
+          }
+        },
+        {
+          "name": "opacity/10",
+          "type": "FLOAT",
+          "scopes": [
+            "OPACITY"
+          ],
+          "valuesByMode": {
+            "Default": 10
+          }
+        },
+        {
+          "name": "opacity/25",
+          "type": "FLOAT",
+          "scopes": [
+            "OPACITY"
+          ],
+          "valuesByMode": {
+            "Default": 25
+          }
+        },
+        {
+          "name": "opacity/50",
+          "type": "FLOAT",
+          "scopes": [
+            "OPACITY"
+          ],
+          "valuesByMode": {
+            "Default": 50
+          }
+        },
+        {
+          "name": "opacity/75",
+          "type": "FLOAT",
+          "scopes": [
+            "OPACITY"
+          ],
+          "valuesByMode": {
+            "Default": 75
+          }
+        },
+        {
+          "name": "opacity/100",
+          "type": "FLOAT",
+          "scopes": [
+            "OPACITY"
+          ],
+          "valuesByMode": {
+            "Default": 100
+          }
+        }
+      ]
+    }
+  ],
+  "textStyles": [
+    {
+      "name": "display-72",
+      "fontFamily": "Clash Grotesk",
+      "fontStyle": "Semibold",
+      "fontStyleFallbacks": [
+        "SemiBold",
+        "Regular"
+      ],
+      "fontSize": 72.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 75.6
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "display-56",
+      "fontFamily": "Clash Grotesk",
+      "fontStyle": "Semibold",
+      "fontStyleFallbacks": [
+        "SemiBold",
+        "Regular"
+      ],
+      "fontSize": 56.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 60.48
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "display-44",
+      "fontFamily": "Clash Grotesk",
+      "fontStyle": "Semibold",
+      "fontStyleFallbacks": [
+        "SemiBold",
+        "Regular"
+      ],
+      "fontSize": 44.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 48.4
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "display-36",
+      "fontFamily": "Clash Grotesk",
+      "fontStyle": "Semibold",
+      "fontStyleFallbacks": [
+        "SemiBold",
+        "Regular"
+      ],
+      "fontSize": 36.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 41.4
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "display-30",
+      "fontFamily": "Clash Grotesk",
+      "fontStyle": "Semibold",
+      "fontStyleFallbacks": [
+        "SemiBold",
+        "Regular"
+      ],
+      "fontSize": 30.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 36.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "heading-40",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 40.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 46.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "heading-36",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 36.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 43.2
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "heading-30",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 30.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 37.5
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "heading-28",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 28.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 35.56
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "heading-24",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 24.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 31.2
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "heading-20",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 20.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 27.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "heading-18",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 18.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 25.2
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "heading-16",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 16.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22.4
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "body-24",
+      "fontFamily": "DM Sans",
+      "fontStyle": "Regular",
+      "fontStyleFallbacks": [],
+      "fontSize": 24.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 36.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "body-20",
+      "fontFamily": "DM Sans",
+      "fontStyle": "Regular",
+      "fontStyleFallbacks": [],
+      "fontSize": 20.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 30.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "body-18",
+      "fontFamily": "DM Sans",
+      "fontStyle": "Regular",
+      "fontStyleFallbacks": [],
+      "fontSize": 18.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 27.9
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "body-16",
+      "fontFamily": "DM Sans",
+      "fontStyle": "Regular",
+      "fontStyleFallbacks": [],
+      "fontSize": 16.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "body-14",
+      "fontFamily": "DM Sans",
+      "fontStyle": "Regular",
+      "fontStyleFallbacks": [],
+      "fontSize": 14.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "body-12",
+      "fontFamily": "DM Sans",
+      "fontStyle": "Regular",
+      "fontStyleFallbacks": [],
+      "fontSize": 12.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 18.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "label-18",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 18.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 19.8
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0.0
+      },
+      "textCase": "UPPER"
+    },
+    {
+      "name": "label-14",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 14.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 15.4
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0.0
+      },
+      "textCase": "UPPER"
+    },
+    {
+      "name": "label-12",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 12.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 13.2
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0.0
+      },
+      "textCase": "UPPER"
+    },
+    {
+      "name": "button-20",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 20.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 20.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "button-18",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 18.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 18.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "button-16",
+      "fontFamily": "DM Sans",
+      "fontStyle": "SemiBold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 16.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 16.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "quote-36",
+      "fontFamily": "Kalam",
+      "fontStyle": "Regular",
+      "fontStyleFallbacks": [],
+      "fontSize": 36.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 46.8
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "quote-24",
+      "fontFamily": "Kalam",
+      "fontStyle": "Regular",
+      "fontStyleFallbacks": [],
+      "fontSize": 24.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 33.6
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    },
+    {
+      "name": "quote-20",
+      "fontFamily": "Kalam",
+      "fontStyle": "Bold",
+      "fontStyleFallbacks": [
+        "Regular"
+      ],
+      "fontSize": 20.0,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28.0
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.0
+      }
+    }
+  ],
+  "effectStyles": [
+    {
+      "name": "shadow/xs",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.05
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 1.0
+          },
+          "radius": 2.0,
+          "spread": 0.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ]
+    },
+    {
+      "name": "shadow/sm",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.1
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 1.0
+          },
+          "radius": 3.0,
+          "spread": 0.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        },
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.1
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 1.0
+          },
+          "radius": 2.0,
+          "spread": -1.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ]
+    },
+    {
+      "name": "shadow/md",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.1
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 4.0
+          },
+          "radius": 6.0,
+          "spread": -1.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        },
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.08
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 2.0
+          },
+          "radius": 4.0,
+          "spread": -2.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ]
+    },
+    {
+      "name": "shadow/lg",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.1
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 10.0
+          },
+          "radius": 15.0,
+          "spread": -3.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        },
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.08
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 4.0
+          },
+          "radius": 6.0,
+          "spread": -4.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ]
+    },
+    {
+      "name": "shadow/xl",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.1
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 20.0
+          },
+          "radius": 25.0,
+          "spread": -5.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        },
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.05
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 8.0
+          },
+          "radius": 10.0,
+          "spread": -6.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ]
+    },
+    {
+      "name": "shadow/2xl",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.25
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 25.0
+          },
+          "radius": 50.0,
+          "spread": -12.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ]
+    },
+    {
+      "name": "shadow/inner",
+      "effects": [
+        {
+          "type": "INNER_SHADOW",
+          "color": {
+            "r": 0.058823529411764705,
+            "g": 0.054901960784313725,
+            "b": 0.1450980392156863,
+            "a": 0.05
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 2.0
+          },
+          "radius": 4.0,
+          "spread": 0.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ]
+    },
+    {
+      "name": "shadow/focus",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.18823529411764706,
+            "g": 0.2196078431372549,
+            "b": 0.9882352941176471,
+            "a": 0.45
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "radius": 0.0,
+          "spread": 3.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ]
+    },
+    {
+      "name": "shadow/focus-danger",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0.9372549019607843,
+            "g": 0.26666666666666666,
+            "b": 0.26666666666666666,
+            "a": 0.45
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "radius": 0.0,
+          "spread": 3.0,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ]
+    }
+  ],
+  "paintStyles": [
+    {
+      "name": "gradient/01-feature/brand",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#1F27E5FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#151A8FFF"
+        }
+      ]
+    },
+    {
+      "name": "gradient/01-feature/dawn",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FBBF24FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#EF4444FF"
+        }
+      ]
+    },
+    {
+      "name": "gradient/01-feature/hero",
+      "type": "GRADIENT_LINEAR",
+      "direction": "diagonal",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#1F27E5FF"
+        },
+        {
+          "position": 0.5,
+          "color": "#3038FCFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#DFFF04FF"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/amber-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FEF3C7FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FEF3C700"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/amber-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FFFBEBFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FFFBEB00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/blue-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#DADCFFFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#DADCFF00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/blue-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#EEF0FFFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#EEF0FF00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/cream-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#F6F4EEFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#F6F4EE00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/cyan-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#CFFAFEFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#CFFAFE00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/cyan-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#ECFEFFFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#ECFEFF00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/danger-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FEE2E2FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FEE2E200"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/emerald-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#D1FAE5FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#D1FAE500"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/emerald-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#ECFDF5FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#ECFDF500"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/indigo-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#E0E7FFFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#E0E7FF00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/indigo-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#EEF2FFFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#EEF2FF00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/info-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#E0F2FEFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#E0F2FE00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/lavender-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#E5E3EBFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#E5E3EB00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/lavender-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#F2F1F6FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#F2F1F600"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/lime-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#ECFCCBFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#ECFCCB00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/lime-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#F7FEE7FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#F7FEE700"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/mint-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#DCE8DFFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#DCE8DF00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/mint-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#E9F2ECFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#E9F2EC00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/navy-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#0F0E25FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#0F0E2500"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/orange-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FFEDD5FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FFEDD500"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/orange-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FFF7EDFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FFF7ED00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/peach-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#E5D8C7FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#E5D8C700"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/peach-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#F1ECE3FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#F1ECE300"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/periwinkle-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#DBE4EDFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#DBE4ED00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/periwinkle-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#E8EDF3FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#E8EDF300"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/pink-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FCE7F3FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FCE7F300"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/pink-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FDF2F8FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FDF2F800"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/red-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FEE2E2FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FEE2E200"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/red-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FEF2F2FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FEF2F200"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/rose-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FFE4E6FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FFE4E600"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/rose-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FFF1F2FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FFF1F200"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/sky-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#E0F2FEFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#E0F2FE00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/sky-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#F0F9FFFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#F0F9FF00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/success-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#D1FAE5FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#D1FAE500"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/violet-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#EDE9FEFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#EDE9FE00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/violet-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#F5F3FFFF"
+        },
+        {
+          "position": 1.0,
+          "color": "#F5F3FF00"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/volt-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FBFFE5FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FBFFE500"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/warning-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FEF3C7FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FEF3C700"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/yellow-bold-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FEF9C3FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FEF9C300"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/yellow-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FEFCE8FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#FEFCE800"
+        }
+      ]
+    },
+    {
+      "name": "gradient/02-fade/zinc-soft-fade",
+      "type": "GRADIENT_LINEAR",
+      "direction": "vertical",
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#F4F4F5FF"
+        },
+        {
+          "position": 1.0,
+          "color": "#F4F4F500"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "name": "Button"
+    },
+    {
+      "name": "Chip"
+    },
+    {
+      "name": "Input"
+    },
+    {
+      "name": "Badge"
+    },
+    {
+      "name": "Switch"
+    },
+    {
+      "name": "Checkbox"
+    },
+    {
+      "name": "Radio"
+    },
+    {
+      "name": "Tabs"
+    },
+    {
+      "name": "Alert"
+    },
+    {
+      "name": "Modal"
+    },
+    {
+      "name": "Dropdown"
+    },
+    {
+      "name": "Tooltip"
+    },
+    {
+      "name": "Accordion"
+    },
+    {
+      "name": "Toast"
+    }
+  ],
+  "obsoletePaintStyles": [
+    "gradient/lavender-soft-fade",
+    "gradient/lavender-bold-fade",
+    "gradient/mint-soft-fade",
+    "gradient/mint-bold-fade",
+    "gradient/peach-soft-fade",
+    "gradient/peach-bold-fade",
+    "gradient/periwinkle-soft-fade",
+    "gradient/periwinkle-bold-fade",
+    "gradient/blue-soft-fade",
+    "gradient/blue-bold-fade",
+    "gradient/volt-soft-fade",
+    "gradient/cream-fade",
+    "gradient/zinc-soft-fade",
+    "gradient/navy-fade",
+    "gradient/success-fade",
+    "gradient/warning-fade",
+    "gradient/danger-fade",
+    "gradient/info-fade",
+    "gradient/hero",
+    "gradient/dawn",
+    "gradient/brand",
+    "gradient/orange-soft-fade",
+    "gradient/orange-bold-fade",
+    "gradient/amber-soft-fade",
+    "gradient/amber-bold-fade",
+    "gradient/yellow-soft-fade",
+    "gradient/yellow-bold-fade",
+    "gradient/lime-soft-fade",
+    "gradient/lime-bold-fade",
+    "gradient/emerald-soft-fade",
+    "gradient/emerald-bold-fade",
+    "gradient/cyan-soft-fade",
+    "gradient/cyan-bold-fade",
+    "gradient/sky-soft-fade",
+    "gradient/sky-bold-fade",
+    "gradient/indigo-soft-fade",
+    "gradient/indigo-bold-fade",
+    "gradient/violet-soft-fade",
+    "gradient/violet-bold-fade",
+    "gradient/pink-soft-fade",
+    "gradient/pink-bold-fade",
+    "gradient/rose-soft-fade",
+    "gradient/rose-bold-fade",
+    "gradient/red-soft-fade",
+    "gradient/red-bold-fade"
+  ]
+}

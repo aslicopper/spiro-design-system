@@ -1,0 +1,43 @@
+{
+  "name": "@aslicopper/tokens",
+  "version": "0.16.0",
+  "description": "Spiro Design System tokens — colors, spacing, typography, shadows. CSS, JS, JSON, and Tailwind preset.",
+  "type": "module",
+  "main": "./dist/tokens.cjs",
+  "module": "./dist/tokens.js",
+  "types": "./dist/tokens.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/tokens.d.ts",
+      "import": "./dist/tokens.js",
+      "require": "./dist/tokens.cjs"
+    },
+    "./css": "./dist/tokens.css",
+    "./fonts": "./dist/fonts.css",
+    "./fonts/*": "./dist/fonts/*",
+    "./json": "./dist/tokens.json",
+    "./tailwind": "./dist/tailwind.preset.cjs",
+    "./source": "./src/figma-import.json"
+  },
+  "files": [
+    "dist",
+    "src/figma-import.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aslicopper/Spiro_.git",
+    "directory": "packages/tokens"
+  },
+  "keywords": ["design-system", "design-tokens", "spiro", "tailwind", "css-variables"],
+  "license": "UNLICENSED",
+  "sideEffects": ["./dist/tokens.css", "./dist/fonts.css"]
+}

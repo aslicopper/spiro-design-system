@@ -1,0 +1,90 @@
+/*
+ * Spiro Design System — Fonts
+ *
+ * Self-hosted WOFF2 versions of the brand typefaces. All three are SIL Open
+ * Font Licensed and safe to redistribute. Total payload ≈ 412 KB across
+ * 8 weights; only the weights actually used by your app will be downloaded
+ * (browsers fetch @font-face files lazily on first use).
+ *
+ * Usage — pick ONE of the following:
+ *
+ * (A) Self-hosted (recommended for prod):
+ *     import '@aslicopper/tokens/fonts';
+ *
+ * (B) CDN (if you'd rather not bundle):
+ *     <link rel="preconnect" href="https://api.fontshare.com" />
+ *     <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@600,700&display=swap" />
+ *     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap" />
+ *
+ * Don't load both — pick one.
+ */
+
+/* ---------- Clash Grotesk (display) ---------- */
+
+@font-face {
+  font-family: 'Clash Grotesk';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/ClashGrotesk-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Clash Grotesk';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/ClashGrotesk-Bold.woff2') format('woff2');
+}
+
+/* ---------- DM Sans (body / UI) ---------- */
+
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/DMSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/DMSans-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/DMSans-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/DMSans-Bold.woff2') format('woff2');
+}
+
+/* ---------- Kalam (handwritten / quotes) ---------- */
+
+@font-face {
+  font-family: 'Kalam';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/Kalam-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Kalam';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/Kalam-Bold.woff2') format('woff2');
+}

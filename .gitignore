@@ -1,0 +1,10 @@
+node_modules/
+*.log
+.DS_Store
+.env
+.env.local
+.tsbuildinfo
+
+# Build outputs are committed for @aslicopper/tokens (so consumers can install
+# without a build step). For @aslicopper/react they are not.
+packages/react/dist/

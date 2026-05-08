@@ -1,0 +1,47 @@
+# Publishes @aslicopper/tokens, @aslicopper/react, and a Figma-plugin release asset
+# to GitHub Packages whenever a tag matching v*.*.* is pushed.
+name: Publish
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com
+          scope: '@aslicopper'
+
+      - name: Install
+        run: npm ci
+
+      - name: Build everything
+        run: npm run build
+
+      - name: Publish @aslicopper/tokens
+        working-directory: packages/tokens
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish @aslicopper/react
+        working-directory: packages/react
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Attach Figma plugin to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: packages/figma-plugin/spiro-figma-importer.zip
+          generate_release_notes: true

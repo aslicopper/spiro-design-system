@@ -1,0 +1,23 @@
+{
+  "name": "spiro-design-system",
+  "version": "0.16.0",
+  "private": true,
+  "description": "Spiro Design System monorepo — tokens, React components, and Figma plugin.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "build:tokens": "npm run build -w @aslicopper/tokens",
+    "build:react": "npm run build -w @aslicopper/react",
+    "release": "npm run build && npm publish --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aslicopper/Spiro_.git"
+  },
+  "license": "UNLICENSED"
+}

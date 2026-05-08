@@ -1,0 +1,235 @@
+/*
+ * Spiro Button styles — v0.4
+ *
+ * Requires tokens.css to be loaded. All values come from CSS custom
+ * properties, so rebranding is a matter of editing tokens.css.
+ *
+ * v0.4 changes
+ *   • Pill-shaped: border-radius uses --spiro-radius-pill (9999px).
+ *   • Six variants: primary / secondary / ghost / destructive / dark / light.
+ *   • Three sizes: sm (32) / md (40) / lg (48) with 14 / 16 / 20 type.
+ *   • Success is a transient flash (.spiro-btn--success), not a variant.
+ */
+
+.spiro-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spiro-space-2);
+
+  font-family: var(--spiro-font-sans);
+  /* Matches the label-lg typography role (DM Sans Medium / 500). */
+  font-weight: var(--spiro-font-weight-medium);
+  line-height: 1;
+  letter-spacing: var(--spiro-letter-tight); /* -2% across all roles */
+  white-space: nowrap;
+
+  border-radius: var(--spiro-radius-pill);
+  border: var(--spiro-border-1) solid transparent;
+
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+
+  transition:
+    background-color var(--spiro-duration-fast) var(--spiro-easing-standard),
+    border-color     var(--spiro-duration-fast) var(--spiro-easing-standard),
+    color            var(--spiro-duration-fast) var(--spiro-easing-standard),
+    box-shadow       var(--spiro-duration-fast) var(--spiro-easing-standard),
+    transform        var(--spiro-duration-fast) var(--spiro-easing-standard);
+}
+
+.spiro-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--spiro-shadow-focus);
+}
+
+.spiro-btn--destructive:focus-visible {
+  box-shadow: var(--spiro-shadow-focus-danger);
+}
+
+.spiro-btn:disabled,
+.spiro-btn[aria-busy="true"] {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.spiro-btn:active:not(:disabled) {
+  transform: translateY(0.5px);
+}
+
+/* ---------- sizes ---------- */
+
+.spiro-btn--sm {
+  height: 32px;
+  padding: 0 var(--spiro-space-4);
+  font-size: var(--spiro-font-size-sm);   /* 14 */
+}
+
+.spiro-btn--md {
+  height: 40px;
+  padding: 0 var(--spiro-space-5);
+  font-size: var(--spiro-font-size-base); /* 16 */
+}
+
+.spiro-btn--lg {
+  height: 48px;
+  padding: 0 var(--spiro-space-6);
+  font-size: var(--spiro-font-size-lg);   /* 20 */
+}
+
+.spiro-btn--full {
+  display: flex;
+  width: 100%;
+}
+
+/* ---------- variants ---------- */
+
+/* primary — brand blue CTA */
+.spiro-btn--primary {
+  background-color: var(--spiro-accent-default);
+  color: var(--spiro-fg-on-accent);
+}
+.spiro-btn--primary:hover:not(:disabled) {
+  background-color: var(--spiro-accent-hover);
+}
+.spiro-btn--primary:active:not(:disabled) {
+  background-color: var(--spiro-accent-pressed);
+}
+
+/* secondary — neutral bordered */
+.spiro-btn--secondary {
+  background-color: var(--spiro-bg-canvas);
+  color: var(--spiro-fg-default);
+  border-color: var(--spiro-border-strong);
+}
+.spiro-btn--secondary:hover:not(:disabled) {
+  background-color: var(--spiro-bg-subtle);
+}
+.spiro-btn--secondary:active:not(:disabled) {
+  background-color: var(--spiro-bg-muted);
+}
+
+/* ghost — transparent, inline */
+.spiro-btn--ghost {
+  background-color: transparent;
+  color: var(--spiro-fg-default);
+}
+.spiro-btn--ghost:hover:not(:disabled) {
+  background-color: var(--spiro-bg-subtle);
+}
+.spiro-btn--ghost:active:not(:disabled) {
+  background-color: var(--spiro-bg-muted);
+}
+
+/* destructive — irreversible actions */
+.spiro-btn--destructive {
+  background-color: var(--spiro-danger-default);
+  color: var(--spiro-fg-on-accent);
+}
+.spiro-btn--destructive:hover:not(:disabled) {
+  background-color: var(--spiro-danger-hover);
+}
+.spiro-btn--destructive:active:not(:disabled) {
+  background-color: var(--spiro-color-red-700);
+}
+
+/* dark — always navy-filled; use on cream / tinted sections where blue would clash */
+/* Reaches for primitives (not flippable semantic aliases) so the button
+   stays navy in both light and dark mode — its purpose is fixed contrast,
+   not theme-response. */
+.spiro-btn--dark {
+  background-color: var(--spiro-bg-navy-950);
+  color: var(--spiro-bg-cream-25);
+}
+.spiro-btn--dark:hover:not(:disabled) {
+  background-color: var(--spiro-bg-navy-900);
+}
+.spiro-btn--dark:active:not(:disabled) {
+  background-color: var(--spiro-bg-navy-975);
+}
+
+/* light — always cream-filled; use on navy / dark sections where blue would clash */
+/* Primitives again, for the same reason as `dark`. */
+.spiro-btn--light {
+  background-color: var(--spiro-bg-cream-25);
+  color: var(--spiro-bg-navy-950);
+}
+.spiro-btn--light:hover:not(:disabled) {
+  background-color: var(--spiro-bg-cream-50);
+}
+.spiro-btn--light:active:not(:disabled) {
+  background-color: var(--spiro-bg-cream-100);
+}
+
+/* ---------- transient success flash ---------- */
+/*
+ * Overrides colour of whichever variant is active for ~1.4s. Driven
+ * by the React component toggling `.spiro-btn--success` after an
+ * async action resolves. Reverts automatically.
+ */
+.spiro-btn--success,
+.spiro-btn--success:hover:not(:disabled),
+.spiro-btn--success:active:not(:disabled) {
+  background-color: var(--spiro-success-default);
+  color: var(--spiro-fg-on-accent);
+  border-color: transparent;
+  animation: spiro-btn-success-pop var(--spiro-duration-base) var(--spiro-easing-standard);
+}
+
+@keyframes spiro-btn-success-pop {
+  0%   { transform: scale(0.96); }
+  60%  { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+/* ---------- icons & spinner ---------- */
+
+.spiro-btn__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.spiro-btn--sm .spiro-btn__icon { width: 16px; height: 16px; }
+.spiro-btn--md .spiro-btn__icon { width: 18px; height: 18px; }
+.spiro-btn--lg .spiro-btn__icon { width: 22px; height: 22px; }
+
+.spiro-btn__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.spiro-btn__label {
+  display: inline-block;
+}
+
+.spiro-btn__spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--spiro-radius-pill);
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  animation: spiro-btn-spin var(--spiro-duration-slow) linear infinite;
+}
+
+.spiro-btn--lg .spiro-btn__spinner { width: 18px; height: 18px; }
+
+@keyframes spiro-btn-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Respect reduced motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+  .spiro-btn {
+    transition: none;
+  }
+  .spiro-btn__spinner {
+    animation-duration: 1.2s;
+  }
+  .spiro-btn--success {
+    animation: none;
+  }
+}
