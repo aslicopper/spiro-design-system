@@ -1,4 +1,4 @@
-// Auto-generated.
+// Auto-generated. Do not edit.
 export interface SpiroTokens {
   "0": string | number;
   "1": string | number;

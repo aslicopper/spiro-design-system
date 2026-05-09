@@ -1,4 +1,5 @@
-// Tailwind preset for Spiro. Auto-generated.
+// Tailwind v3+ preset for the Spiro Design System.
+// Auto-generated from tokens-studio.json. Do not edit.
 
 module.exports = {
   theme: {
@@ -456,10 +457,23 @@ module.exports = {
         "focus-danger": "var(--spiro-shadow-focus-danger)"
 },
       fontFamily: {
-        display: ['Clash Grotesk', 'Inter', 'system-ui', 'sans-serif'],
-        sans: ['DM Sans', 'Inter', 'system-ui', 'sans-serif'],
-        handwritten: ['Kalam', 'cursive'],
-      },
+        "display": [
+                "Clash Grotesk",
+                "Inter",
+                "system-ui",
+                "sans-serif"
+        ],
+        "sans": [
+                "DM Sans",
+                "Inter",
+                "system-ui",
+                "sans-serif"
+        ],
+        "handwritten": [
+                "Kalam",
+                "cursive"
+        ]
+},
       fontSize: {
         "12": "12px",
         "14": "14px",
@@ -495,7 +509,11 @@ module.exports = {
         "semibold": "600",
         "bold": "700"
 },
-      transitionDuration: { fast: '120ms', DEFAULT: '200ms', slow: '320ms' },
+      transitionDuration: {
+        fast: '120ms',
+        DEFAULT: '200ms',
+        slow: '320ms',
+      },
       transitionTimingFunction: {
         standard: 'cubic-bezier(0.2, 0, 0, 1)',
         enter: 'cubic-bezier(0, 0, 0.2, 1)',

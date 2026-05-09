@@ -1,4 +1,4 @@
-// Auto-generated.
+// Auto-generated. Do not edit.
 export const tokens = {
   "0": "0.00",
   "1": "1.00",
