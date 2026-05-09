@@ -42,7 +42,8 @@ const camel = (s) => {
 // Tokens Studio sometimes wraps tokens under a type-named group ("Color",
 // "Dimension", "Number", "Opacity") at the top level of each set. Strip those.
 const TYPE_WRAPPERS = new Set([
-  'color', 'dimension', 'number', 'opacity', 'fontfamilies', 'fontweights'
+  'color', 'dimension', 'number', 'opacity', 'fontfamilies', 'fontweights',
+  'shadow', 'gradient'
 ]);
 
 // Walk the W3C tree, collecting [{ path: string[], type, value }] for each leaf.
@@ -100,11 +101,35 @@ const buckets = {
   stroke: [],
   opacity: [],
   typography: [],
+  shadows: [],
+  gradient: [],
 };
+
+// Convert a Tokens Studio boxShadow $value (object or array of objects) to a CSS box-shadow string.
+function shadowToCss(value) {
+  const layers = Array.isArray(value) ? value : [value];
+  return layers.map(layer => {
+    const inset = layer.type === 'innerShadow' ? 'inset ' : '';
+    const x = layer.x ?? 0;
+    const y = layer.y ?? 0;
+    const blur = layer.blur ?? 0;
+    const spread = layer.spread ?? 0;
+    const color = layer.color ?? 'rgba(0,0,0,0.10)';
+    return `${inset}${x}px ${y}px ${blur}px ${spread}px ${color}`;
+  }).join(', ');
+}
 const unknown = [];
 
+// Aliases — handle plural / variant set names that should map to canonical buckets.
+const CATEGORY_ALIAS = {
+  gradients: 'gradient',
+  shadow: 'shadows',
+};
+
 for (const [setName, set] of Object.entries(data)) {
-  const { category, mode } = parseSetName(setName);
+  const parsed = parseSetName(setName);
+  const category = CATEGORY_ALIAS[parsed.category] || parsed.category;
+  const mode = parsed.mode;
   const tokens = flatten(set);
   if (category === 'color') {
     buckets.color[mode] = (buckets.color[mode] || []).concat(tokens);
@@ -119,7 +144,7 @@ if (unknown.length) {
   console.warn(`  Note: unhandled set(s):`, unknown.map((u) => `${u.setName} (${u.count})`).join(', '));
 }
 
-console.log(`  parsed:  color/Light=${buckets.color.Light.length}, color/Dark=${buckets.color.Dark.length}, spacing=${buckets.spacing.length}, radius=${buckets.radius.length}, stroke=${buckets.stroke.length}, opacity=${buckets.opacity.length}`);
+console.log(`  parsed:  color/Light=${buckets.color.Light.length}, color/Dark=${buckets.color.Dark.length}, spacing=${buckets.spacing.length}, radius=${buckets.radius.length}, stroke=${buckets.stroke.length}, opacity=${buckets.opacity.length}, typography=${buckets.typography.length}, shadows=${buckets.shadows.length}, gradient=${buckets.gradient.length}`);
 
 // ----- step 1: tokens.css -----------------------------------------------
 
@@ -159,6 +184,14 @@ if (buckets.stroke.length) {
 if (buckets.opacity.length) {
   lines.push('  /* ---------- Opacity ---------- */');
   for (const t of buckets.opacity) lines.push(`  ${cssName(t.path)}: ${normOpacity(t.value)};`);
+  lines.push('');
+}
+if (buckets.gradient.length) {
+  lines.push('  /* ---------- Gradient ---------- */');
+  for (const t of buckets.gradient) {
+    const name = t.path.map(kebab).join('-');
+    lines.push(`  --spiro-gradient-${name}: ${t.value};`);
+  }
   lines.push('');
 }
 
@@ -219,17 +252,26 @@ lines.push(`  --spiro-easing-enter: cubic-bezier(0, 0, 0.2, 1);`);
 lines.push(`  --spiro-easing-exit: cubic-bezier(0.4, 0, 1, 1);`);
 lines.push('');
 
-const shadowsLight = {
-  'xs':           '0 1px 2px 0 rgba(15,14,37,0.05)',
-  'sm':           '0 1px 3px 0 rgba(15,14,37,0.10), 0 1px 2px -1px rgba(15,14,37,0.10)',
-  'md':           '0 4px 6px -1px rgba(15,14,37,0.10), 0 2px 4px -2px rgba(15,14,37,0.08)',
-  'lg':           '0 10px 15px -3px rgba(15,14,37,0.10), 0 4px 6px -4px rgba(15,14,37,0.08)',
-  'xl':           '0 20px 25px -5px rgba(15,14,37,0.10), 0 8px 10px -6px rgba(15,14,37,0.05)',
-  '2xl':          '0 25px 50px -12px rgba(15,14,37,0.25)',
-  'inner':        'inset 0 2px 4px 0 rgba(15,14,37,0.05)',
-  'focus':        '0 0 0 3px rgba(48,56,252,0.45)',
-  'focus-danger': '0 0 0 3px rgba(239,68,68,0.45)',
-};
+// Build a {name → cssString} map of shadows from the Tokens Studio Shadows/Default set.
+const shadowsLight = {};
+for (const t of buckets.shadows) {
+  const name = t.path.map(kebab).join('-');
+  shadowsLight[name] = shadowToCss(t.value);
+}
+// Fallback to hardcoded values if Tokens Studio set is empty (for safety).
+if (Object.keys(shadowsLight).length === 0) {
+  Object.assign(shadowsLight, {
+    'xs':           '0 1px 2px 0 rgba(15,14,37,0.05)',
+    'sm':           '0 1px 3px 0 rgba(15,14,37,0.10), 0 1px 2px -1px rgba(15,14,37,0.10)',
+    'md':           '0 4px 6px -1px rgba(15,14,37,0.10), 0 2px 4px -2px rgba(15,14,37,0.08)',
+    'lg':           '0 10px 15px -3px rgba(15,14,37,0.10), 0 4px 6px -4px rgba(15,14,37,0.08)',
+    'xl':           '0 20px 25px -5px rgba(15,14,37,0.10), 0 8px 10px -6px rgba(15,14,37,0.05)',
+    '2xl':          '0 25px 50px -12px rgba(15,14,37,0.25)',
+    'inner':        'inset 0 2px 4px 0 rgba(15,14,37,0.05)',
+    'focus':        '0 0 0 3px rgba(48,56,252,0.45)',
+    'focus-danger': '0 0 0 3px rgba(239,68,68,0.45)',
+  });
+}
 lines.push('  /* ---------- Shadow (light) ---------- */');
 for (const [k, v] of Object.entries(shadowsLight)) lines.push(`  --spiro-shadow-${k}: ${v};`);
 lines.push('}');
@@ -385,6 +427,7 @@ module.exports = {
   theme: {
     extend: {
       colors: ${JSON.stringify(colorTree, null, 8)},
+      backgroundImage: ${JSON.stringify(buckets.gradient.reduce((acc, t) => ({ ...acc, [t.path.map(kebab).join('-')]: `var(--spiro-gradient-${t.path.map(kebab).join('-')})` }), {}), null, 8)},
       spacing: ${JSON.stringify(spacingScale, null, 8)},
       borderRadius: ${JSON.stringify(radiusScale, null, 8)},
       borderWidth: ${JSON.stringify(borderScale, null, 8)},
