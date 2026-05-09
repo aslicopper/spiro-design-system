@@ -457,9 +457,22 @@ module.exports = {
         "focus-danger": "var(--spiro-shadow-focus-danger)"
 },
       fontFamily: {
-        "display": "Clash Grotesk",
-        "sans": "DM Sans",
-        "handwritten": "Kalam"
+        "display": [
+                "Clash Grotesk",
+                "Inter",
+                "system-ui",
+                "sans-serif"
+        ],
+        "sans": [
+                "DM Sans",
+                "Inter",
+                "system-ui",
+                "sans-serif"
+        ],
+        "handwritten": [
+                "Kalam",
+                "cursive"
+        ]
 },
       fontSize: {
         "12": "12px",
@@ -476,13 +489,19 @@ module.exports = {
         "56": "56px",
         "72": "72px"
 },
-      lineHeight: {},
+      lineHeight: {
+        "tight": "1.05",
+        "snug": "1.2",
+        "normal": "1.4",
+        "relaxed": "1.5",
+        "loose": "1.65"
+},
       letterSpacing: {
-        "tighter": -2,
-        "tight": -1,
-        "normal": 0,
-        "wide": 2,
-        "wider": 4
+        "tighter": "-0.02em",
+        "tight": "-0.01em",
+        "normal": "0",
+        "wide": "0.02em",
+        "wider": "0.04em"
 },
       fontWeight: {
         "regular": "400",

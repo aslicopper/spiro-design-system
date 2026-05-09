@@ -403,9 +403,14 @@
   --spiro-100: 1.00;
 
   /* ---------- Typography ---------- */
-  --spiro-font-display: Clash Grotesk;
-  --spiro-font-sans: DM Sans;
-  --spiro-font-handwritten: Kalam;
+  --spiro-line-height-tight: 1.05;
+  --spiro-line-height-snug: 1.2;
+  --spiro-line-height-normal: 1.4;
+  --spiro-line-height-relaxed: 1.5;
+  --spiro-line-height-loose: 1.65;
+  --spiro-font-display: 'Clash Grotesk', 'Inter', system-ui, sans-serif;
+  --spiro-font-sans: 'DM Sans', 'Inter', system-ui, sans-serif;
+  --spiro-font-handwritten: Kalam, cursive;
   --spiro-font-size-12: 12px;
   --spiro-font-size-14: 14px;
   --spiro-font-size-16: 16px;
@@ -423,11 +428,11 @@
   --spiro-font-weight-medium: 500;
   --spiro-font-weight-semibold: 600;
   --spiro-font-weight-bold: 700;
-  --spiro-letter-spacing-tighter: -2;
-  --spiro-letter-spacing-tight: -1;
+  --spiro-letter-spacing-tighter: -0.02em;
+  --spiro-letter-spacing-tight: -0.01em;
   --spiro-letter-spacing-normal: 0;
-  --spiro-letter-spacing-wide: 2;
-  --spiro-letter-spacing-wider: 4;
+  --spiro-letter-spacing-wide: 0.02em;
+  --spiro-letter-spacing-wider: 0.04em;
   --spiro-paragraph-spacing-tight: 8px;
   --spiro-paragraph-spacing-normal: 16px;
   --spiro-paragraph-spacing-loose: 24px;
