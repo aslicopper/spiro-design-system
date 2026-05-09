@@ -163,13 +163,32 @@ if (buckets.opacity.length) {
 }
 
 lines.push('  /* ---------- Typography ---------- */');
+// Line-height ratios live here, not in Tokens Studio. They're CSS-only
+// because Figma's line-height field is per-text-style in pixels — not
+// reconcilable with a single ratio scale. Designers in Figma use named
+// text styles (display-72, body-16) which have the right line-height baked in.
+const LINE_HEIGHTS = {
+  tight:   '1.05',
+  snug:    '1.2',
+  normal:  '1.4',
+  relaxed: '1.5',
+  loose:   '1.65',
+};
+for (const [k, v] of Object.entries(LINE_HEIGHTS)) {
+  lines.push(`  --spiro-line-height-${k}: ${v};`);
+}
 const TYPE_PREFIX = {
   fontFamily: 'font',
   fontSize: 'font-size',
   fontWeight: 'font-weight',
-  lineHeight: 'line-height',
   letterSpacing: 'letter-spacing',
   paragraphSpacing: 'paragraph-spacing',
+};
+// CSS-side fallback stacks per primary font (added in CSS only — Figma uses just the primary).
+const FONT_FALLBACKS = {
+  display:     "'Inter', system-ui, sans-serif",
+  sans:        "'Inter', system-ui, sans-serif",
+  handwritten: 'cursive',
 };
 for (const t of buckets.typography) {
   const group = t.path[0];
@@ -177,8 +196,15 @@ for (const t of buckets.typography) {
   if (!prefix) continue;
   const name = t.path.slice(1).map(kebab).join('-');
   let value = t.value;
-  if (group === 'fontFamily' && Array.isArray(value)) {
-    value = value.map((f) => /\s/.test(f) ? `'${f}'` : f).join(', ');
+  if (group === 'fontFamily') {
+    const primary = Array.isArray(value) ? value[0] : value;
+    const quoted = /\s/.test(primary) ? `'${primary}'` : primary;
+    const fallback = FONT_FALLBACKS[t.path[1]] || 'sans-serif';
+    value = `${quoted}, ${fallback}`;
+  } else if (group === 'letterSpacing' && typeof value === 'number') {
+    // Figma stores as percent (-2) → CSS uses em (-0.02em).
+    value = `${(value / 100).toFixed(3).replace(/0+$/, '').replace(/\.$/, '')}em`;
+    if (value === 'em' || value === '0em') value = '0';
   }
   lines.push(`  --spiro-${prefix}-${name}: ${value};`);
 }
@@ -363,10 +389,19 @@ module.exports = {
       borderRadius: ${JSON.stringify(radiusScale, null, 8)},
       borderWidth: ${JSON.stringify(borderScale, null, 8)},
       boxShadow: ${JSON.stringify(shadowScale, null, 8)},
-      fontFamily: ${JSON.stringify(buckets.typography.filter(t => t.path[0] === 'fontFamily').reduce((acc, t) => ({ ...acc, [t.path[1]]: t.value }), {}), null, 8)},
+      fontFamily: ${JSON.stringify(buckets.typography.filter(t => t.path[0] === 'fontFamily').reduce((acc, t) => {
+        const primary = Array.isArray(t.value) ? t.value[0] : t.value;
+        const fallback = FONT_FALLBACKS[t.path[1]] || 'sans-serif';
+        const fallbackArr = fallback.split(',').map(s => s.trim().replace(/^['"]|['"]$/g, ''));
+        return { ...acc, [t.path[1]]: [primary, ...fallbackArr] };
+      }, {}), null, 8)},
       fontSize: ${JSON.stringify(buckets.typography.filter(t => t.path[0] === 'fontSize').reduce((acc, t) => ({ ...acc, [t.path[1]]: t.value }), {}), null, 8)},
-      lineHeight: ${JSON.stringify(buckets.typography.filter(t => t.path[0] === 'lineHeight').reduce((acc, t) => ({ ...acc, [t.path[1]]: String(t.value) }), {}), null, 8)},
-      letterSpacing: ${JSON.stringify(buckets.typography.filter(t => t.path[0] === 'letterSpacing').reduce((acc, t) => ({ ...acc, [t.path[1]]: t.value }), {}), null, 8)},
+      lineHeight: ${JSON.stringify(LINE_HEIGHTS, null, 8)},
+      letterSpacing: ${JSON.stringify(buckets.typography.filter(t => t.path[0] === 'letterSpacing').reduce((acc, t) => {
+        let v = typeof t.value === 'number' ? `${(t.value / 100).toFixed(3).replace(/0+$/, '').replace(/\.$/, '')}em` : t.value;
+        if (v === 'em' || v === '0em') v = '0';
+        return { ...acc, [t.path[1]]: v };
+      }, {}), null, 8)},
       fontWeight: ${JSON.stringify(buckets.typography.filter(t => t.path[0] === 'fontWeight').reduce((acc, t) => ({ ...acc, [t.path[1]]: String(t.value) }), {}), null, 8)},
       transitionDuration: {
         fast: '120ms',
