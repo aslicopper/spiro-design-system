@@ -387,14 +387,14 @@ export const tokens = {
   "border1": "1px",
   "border2": "2px",
   "border3": "3px",
-  "shadowXs": "0 1px 2px 0 rgba(15,14,37,0.05)",
-  "shadowSm": "0 1px 3px 0 rgba(15,14,37,0.10), 0 1px 2px -1px rgba(15,14,37,0.10)",
-  "shadowMd": "0 4px 6px -1px rgba(15,14,37,0.10), 0 2px 4px -2px rgba(15,14,37,0.08)",
-  "shadowLg": "0 10px 15px -3px rgba(15,14,37,0.10), 0 4px 6px -4px rgba(15,14,37,0.08)",
-  "shadowXl": "0 20px 25px -5px rgba(15,14,37,0.10), 0 8px 10px -6px rgba(15,14,37,0.05)",
-  "shadow2xl": "0 25px 50px -12px rgba(15,14,37,0.25)",
-  "shadowInner": "inset 0 2px 4px 0 rgba(15,14,37,0.05)",
-  "shadowFocus": "0 0 0 3px rgba(48,56,252,0.45)",
-  "shadowFocusDanger": "0 0 0 3px rgba(239,68,68,0.45)"
+  "shadowXs": "0px 1px 2px 0px #0f0e250d",
+  "shadowSm": "0px 1px 2px -1px #0f0e251a, 0px 1px 3px 0px #0f0e251a",
+  "shadowMd": "0px 2px 4px -2px #0f0e2514, 0px 4px 6px -1px #0f0e251a",
+  "shadowLg": "0px 4px 6px -4px #0f0e2514, 0px 10px 15px -3px #0f0e251a",
+  "shadowXl": "0px 8px 10px -6px #0f0e250d, 0px 20px 25px -5px #0f0e251a",
+  "shadow2xl": "0px 25px 50px -12px #0f0e2540",
+  "shadowInner": "inset 0px 2px 4px 0px #0f0e250d",
+  "shadowFocus": "0px 0px 0px 3px #3038fc73",
+  "shadowFocusDanger": "0px 0px 0px 3px #ef444473"
 };
 export default tokens;
