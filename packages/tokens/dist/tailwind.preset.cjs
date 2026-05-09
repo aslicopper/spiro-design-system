@@ -411,6 +411,57 @@ module.exports = {
                 "900": "var(--spiro-rose-900)",
                 "950": "var(--spiro-rose-950)",
                 "975": "var(--spiro-rose-975)"
+        },
+        "gradient": {
+                "01-feature": {
+                        "brand": "var(--spiro-gradient-01-feature-brand)",
+                        "dawn": "var(--spiro-gradient-01-feature-dawn)",
+                        "hero": "var(--spiro-gradient-01-feature-hero)"
+                },
+                "02-fade": {
+                        "amber-bold-fade": "var(--spiro-gradient-02-fade-amber-bold-fade)",
+                        "amber-soft-fade": "var(--spiro-gradient-02-fade-amber-soft-fade)",
+                        "blue-bold-fade": "var(--spiro-gradient-02-fade-blue-bold-fade)",
+                        "blue-soft-fade": "var(--spiro-gradient-02-fade-blue-soft-fade)",
+                        "cream-fade": "var(--spiro-gradient-02-fade-cream-fade)",
+                        "cyan-bold-fade": "var(--spiro-gradient-02-fade-cyan-bold-fade)",
+                        "cyan-soft-fade": "var(--spiro-gradient-02-fade-cyan-soft-fade)",
+                        "danger-fade": "var(--spiro-gradient-02-fade-danger-fade)",
+                        "emerald-bold-fade": "var(--spiro-gradient-02-fade-emerald-bold-fade)",
+                        "emerald-soft-fade": "var(--spiro-gradient-02-fade-emerald-soft-fade)",
+                        "indigo-bold-fade": "var(--spiro-gradient-02-fade-indigo-bold-fade)",
+                        "indigo-soft-fade": "var(--spiro-gradient-02-fade-indigo-soft-fade)",
+                        "info-fade": "var(--spiro-gradient-02-fade-info-fade)",
+                        "lavender-bold-fade": "var(--spiro-gradient-02-fade-lavender-bold-fade)",
+                        "lavender-soft-fade": "var(--spiro-gradient-02-fade-lavender-soft-fade)",
+                        "lime-bold-fade": "var(--spiro-gradient-02-fade-lime-bold-fade)",
+                        "lime-soft-fade": "var(--spiro-gradient-02-fade-lime-soft-fade)",
+                        "mint-bold-fade": "var(--spiro-gradient-02-fade-mint-bold-fade)",
+                        "mint-soft-fade": "var(--spiro-gradient-02-fade-mint-soft-fade)",
+                        "navy-fade": "var(--spiro-gradient-02-fade-navy-fade)",
+                        "orange-bold-fade": "var(--spiro-gradient-02-fade-orange-bold-fade)",
+                        "orange-soft-fade": "var(--spiro-gradient-02-fade-orange-soft-fade)",
+                        "peach-bold-fade": "var(--spiro-gradient-02-fade-peach-bold-fade)",
+                        "peach-soft-fade": "var(--spiro-gradient-02-fade-peach-soft-fade)",
+                        "periwinkle-bold-fade": "var(--spiro-gradient-02-fade-periwinkle-bold-fade)",
+                        "periwinkle-soft-fade": "var(--spiro-gradient-02-fade-periwinkle-soft-fade)",
+                        "pink-bold-fade": "var(--spiro-gradient-02-fade-pink-bold-fade)",
+                        "pink-soft-fade": "var(--spiro-gradient-02-fade-pink-soft-fade)",
+                        "red-bold-fade": "var(--spiro-gradient-02-fade-red-bold-fade)",
+                        "red-soft-fade": "var(--spiro-gradient-02-fade-red-soft-fade)",
+                        "rose-bold-fade": "var(--spiro-gradient-02-fade-rose-bold-fade)",
+                        "rose-soft-fade": "var(--spiro-gradient-02-fade-rose-soft-fade)",
+                        "sky-bold-fade": "var(--spiro-gradient-02-fade-sky-bold-fade)",
+                        "sky-soft-fade": "var(--spiro-gradient-02-fade-sky-soft-fade)",
+                        "success-fade": "var(--spiro-gradient-02-fade-success-fade)",
+                        "violet-bold-fade": "var(--spiro-gradient-02-fade-violet-bold-fade)",
+                        "violet-soft-fade": "var(--spiro-gradient-02-fade-violet-soft-fade)",
+                        "volt-soft-fade": "var(--spiro-gradient-02-fade-volt-soft-fade)",
+                        "warning-fade": "var(--spiro-gradient-02-fade-warning-fade)",
+                        "yellow-bold-fade": "var(--spiro-gradient-02-fade-yellow-bold-fade)",
+                        "yellow-soft-fade": "var(--spiro-gradient-02-fade-yellow-soft-fade)",
+                        "zinc-soft-fade": "var(--spiro-gradient-02-fade-zinc-soft-fade)"
+                }
         }
 },
       spacing: {
@@ -475,7 +526,19 @@ module.exports = {
         ]
 },
       fontSize: {
-        "12": "12px",
+        "0": "12",
+        "1": "14",
+        "2": "16",
+        "3": "18",
+        "4": "20",
+        "5": "24",
+        "6": "28",
+        "7": "30",
+        "8": "36",
+        "9": "40",
+        "10": "44",
+        "11": "56",
+        "12": "72",
         "14": "14px",
         "16": "16px",
         "18": "18px",
@@ -497,11 +560,14 @@ module.exports = {
         "loose": "1.65"
 },
       letterSpacing: {
-        "tighter": "-0.02em",
-        "tight": "-0.01em",
+        "0": "-2",
+        "1": "-2%",
+        "2": "0%",
+        "tighter": "-2",
+        "tight": "-1",
         "normal": "0",
-        "wide": "0.02em",
-        "wider": "0.04em"
+        "wide": "2",
+        "wider": "4"
 },
       fontWeight: {
         "regular": "400",
