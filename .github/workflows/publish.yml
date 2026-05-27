@@ -6,6 +6,9 @@ on:
   push:
     tags:
       - 'v*.*.*'
+  # Allow manual re-runs from the Actions tab against an existing tag,
+  # so a workflow tweak doesn't require deleting and re-creating the tag.
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -23,7 +26,10 @@ jobs:
           scope: '@aslicopper'
 
       - name: Install
-        run: npm ci
+        # Using `npm install` (not `npm ci`) so the workflow runs without a
+        # committed package-lock.json. Add a lockfile + switch back to `npm ci`
+        # later for fully reproducible CI installs.
+        run: npm install
 
       - name: Build everything
         run: npm run build
