@@ -1,0 +1,54 @@
+# Builds packages/preview/ and publishes the result to GitHub Pages
+# at https://aslicopper.github.io/spiro-design-system/. Triggers on any
+# change to the preview package or to the underlying tokens/react files
+# the preview reads from.
+name: Deploy preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/preview/**'
+      - 'packages/tokens/dist/**'
+      - 'packages/react/src/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one in-flight deploy at a time, cancel older queued runs.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build preview
+        working-directory: packages/preview
+        run: python3 scripts/build.py
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: packages/preview/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

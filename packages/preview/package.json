@@ -1,0 +1,16 @@
+{
+  "name": "@aslicopper/preview",
+  "version": "0.16.0",
+  "private": true,
+  "description": "Spiro Design System — visual preview site. Renders tokens, typography, components, and patterns into a single HTML page for designers, engineers, and AI design tools.",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "serve": "python3 -m http.server 8080 --directory dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aslicopper/spiro-design-system.git",
+    "directory": "packages/preview"
+  },
+  "license": "UNLICENSED"
+}
