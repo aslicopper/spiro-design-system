@@ -1283,28 +1283,6 @@ p  { margin: 0 0 12px 0; color: var(--spiro-fg-default); }
   max-width: 18ch;
 }
 
-/* Interactive name cycler — click to try other names.
-   Subtle underline appears on hover; cursor signals interactivity. */
-.ds-name {
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  transition: color var(--spiro-duration-fast, 120ms) var(--spiro-easing-standard, ease);
-}
-.ds-name::after {
-  content: "";
-  position: absolute;
-  left: 2px; right: 2px; bottom: 6px;
-  height: 3px;
-  background: currentColor;
-  opacity: 0;
-  border-radius: 2px;
-  transition: opacity var(--spiro-duration-fast, 120ms) var(--spiro-easing-standard, ease);
-}
-.ds-name:hover::after,
-.ds-name:focus-visible::after { opacity: 0.35; }
-.ds-name:focus-visible { outline: none; }
 .hero__sub {
   font-family: var(--spiro-font-sans);
   font-size: 18px;
@@ -2141,7 +2119,7 @@ PAGE = r"""<!doctype html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Safari Design · v0.16</title>
+<title>Spiro Design System · v0.16</title>
 <style>{fonts}</style>
 <style>{tokens}</style>
 <style>{buttons}</style>
@@ -2153,7 +2131,7 @@ PAGE = r"""<!doctype html>
 <nav class="nav" aria-label="Primary">
   <a href="#introduction" class="nav__brand">
     <span class="nav__logo" aria-hidden="true"></span>
-    <span class="ds-name" role="button" tabindex="0" aria-label="Click to try other names">Safari</span> Design
+    Spiro Design System
   </a>
   <span class="nav__version">v0.16</span>
   <div class="nav__spacer"></div>
@@ -2212,7 +2190,7 @@ PAGE = r"""<!doctype html>
           <path d="M230.263 54.9753C233.057 54.9753 235.325 52.6664 235.325 49.8201V19.6392C235.325 16.7909 233.057 14.484 230.263 14.484C227.468 14.484 225.201 16.7909 225.201 19.6392V49.8201C225.201 52.6664 227.468 54.9753 230.263 54.9753Z"/>
         </svg>
       </span>
-      <h1 class="hero__title"><span class="ds-name" role="button" tabindex="0" aria-label="Click to try other names">Safari</span> Design</h1>
+      <h1 class="hero__title">Spiro Design System</h1>
       <p class="hero__sub">
         The visual system behind Spiro — a pan-African electric motorcycle and battery-swap company.
         Primitives, components, icons, and patterns. Token-driven, theme-ready, WCAG-AA throughout.
@@ -2407,27 +2385,6 @@ PAGE = r"""<!doctype html>
       hero.style.removeProperty('--my');
     }});
   }}
-
-  // ----- Name cycler — A/B testing the design system name in-context -----
-  // Click any "Spiro <name>" instance to cycle through the candidates.
-  // All instances stay in sync; the browser tab title updates too.
-  const dsNames = ['Safari', 'Pulse', 'Atlas', 'Arc', 'Move'];
-  let dsIdx = 0;
-  const dsEls = document.querySelectorAll('.ds-name');
-  function setDsName(name) {{
-    dsEls.forEach(el => {{ el.textContent = name; }});
-    document.title = `${{name}} Design · v0.16`;
-  }}
-  function cycleDs() {{
-    dsIdx = (dsIdx + 1) % dsNames.length;
-    setDsName(dsNames[dsIdx]);
-  }}
-  dsEls.forEach(el => {{
-    el.addEventListener('click', (ev) => {{ ev.preventDefault(); cycleDs(); }});
-    el.addEventListener('keydown', (ev) => {{
-      if (ev.key === 'Enter' || ev.key === ' ') {{ ev.preventDefault(); cycleDs(); }}
-    }});
-  }});
 
   // ----- Resolve semantic swatch colours -----
   // Each .sem-swatch has data-var; --p-dark mirror uses a virtual root with
