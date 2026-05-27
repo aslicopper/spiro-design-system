@@ -1290,8 +1290,35 @@ p  { margin: 0 0 12px 0; color: var(--spiro-fg-default); }
   letter-spacing: -0.02em;
   color: rgba(251,250,247,0.72);
   max-width: 64ch;
-  margin: 0 0 40px 0;
+  margin: 0 0 24px 0;
 }
+.hero__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(223,255,4,0.32);
+  background: rgba(223,255,4,0.08);
+  font-family: var(--spiro-font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(251,250,247,0.88);
+  max-width: 64ch;
+  margin: 0 0 32px 0;
+}
+.hero__note-tag {
+  display: inline-block;
+  flex: 0 0 auto;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--spiro-volt-500, #DFFF04);
+  padding-top: 3px;
+}
+.hero__note-body { flex: 1 1 auto; min-width: 0; }
 .hero__pills {
   display: flex;
   flex-wrap: wrap;
@@ -2194,6 +2221,10 @@ PAGE = r"""<!doctype html>
       <p class="hero__sub">
         The visual system behind Spiro — a pan-African electric motorcycle and battery-swap company.
         Primitives, components, icons, and patterns. Token-driven, theme-ready, WCAG-AA throughout.
+      </p>
+      <p class="hero__note">
+        <span class="hero__note-tag">v0.16 · first public version</span>
+        <span class="hero__note-body">Foundations are stable — colour, typography, spacing, shadows, gradients, the Button component. The system will keep evolving as you build with us. If something is missing, open an issue on the repo and we'll fold it in.</span>
       </p>
       <div class="hero__pills">
         <span class="hero__pill"><span class="hero__pill-num">15</span><span class="hero__pill-label">Colour families</span></span>
