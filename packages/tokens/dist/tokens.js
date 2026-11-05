@@ -373,6 +373,7 @@ export const tokens = {
   "space12": "48px",
   "space16": "64px",
   "space20": "80px",
+  "space05": "2px",
   "radius0": "0px",
   "radius2": "2px",
   "radius4": "4px",
