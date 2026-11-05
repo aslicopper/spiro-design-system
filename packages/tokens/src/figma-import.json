@@ -4648,6 +4648,17 @@
           }
         },
         {
+          "name": "space/0-5",
+          "type": "FLOAT",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Default": 2.0
+          }
+        },
+        {
           "name": "space/1",
           "type": "FLOAT",
           "scopes": [

@@ -373,6 +373,7 @@ export interface SpiroTokens {
   "space12": string | number;
   "space16": string | number;
   "space20": string | number;
+  "space05": string | number;
   "radius0": string | number;
   "radius2": string | number;
   "radius4": string | number;

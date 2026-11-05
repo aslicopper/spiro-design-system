@@ -8662,6 +8662,17 @@
         "$type": "dimension",
         "$value": "0px"
       },
+      "0-5": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT",
+            "GAP"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "dimension",
+        "$value": "2px"
+      },
       "1": {
         "$extensions": {
           "com.figma.scopes": [
